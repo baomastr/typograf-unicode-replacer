@@ -35,7 +35,12 @@ export default class Input extends PureComponent {
         <label>
           <textarea value={this.state.value} onChange={this.handleChange} cols="100" rows="20" />
         </label>
-        <input type="submit" value="Submit" />
+          <br/>
+          <br/>
+        <div>
+            <input type="submit" value="replace" />
+        </div>
+          <br/>
         <Output output={this.state.output} />
       </form>
     );
