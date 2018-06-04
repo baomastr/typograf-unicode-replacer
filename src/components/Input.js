@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import Output from './Output';
+import {getTypografedText} from "../services/typograf";
 
 export default class Input extends PureComponent {
   constructor(props) {
@@ -15,7 +16,7 @@ export default class Input extends PureComponent {
 
   handleChange(event) {
     this.setState({ value: event.target.value });
-    console.log(this.state.value);
+    // console.log(this.state.value);
   }
 
   handleSubmit(event) {
@@ -26,7 +27,8 @@ export default class Input extends PureComponent {
       .replace(/&laquo;/g, `\\u00AB`)
       .replace(/&raquo;/g, `\\u00AA`);
     this.setState({ output: replaced });
-    console.log(this.state.output);
+    console.log(this.state.value);
+    getTypografedText(this.state.value);
   }
 
   render() {
