@@ -23,8 +23,10 @@ const apiUrl = 'http://www.typograf.ru/webservice/';
 
 export const getTypografedText = input => {
     return fetch(`${apiUrl}`, {
+        mode: 'no-cors',
         method: 'post',
         headers: {
+            Accept: 'text/plain',
             'Content-Type': 'text/plain',
         },
         body: JSON.stringify({

@@ -25,7 +25,7 @@ export default class Input extends PureComponent {
       .replace(/&nbsp;/g, `\\u00a0`)
       .replace(/&mdash;/g, `\\u2014`)
       .replace(/&laquo;/g, `\\u00AB`)
-      .replace(/&raquo;/g, `\\u00AA`);
+      .replace(/&raquo;/g, `\\u00BB`);
     this.setState({ output: replaced });
     console.log(this.state.value);
     getTypografedText(this.state.value);
