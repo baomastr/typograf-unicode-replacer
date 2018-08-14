@@ -1286,7 +1286,7 @@
         <tr>
             <td>бубны</td>
             <td>&amp;diams;</td>
-            <td align="center"></td>
+            <td align="center">♦</td>
         </tr>
         </tbody>
     </table>
