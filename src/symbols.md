@@ -1,1295 +1,2785 @@
-
 <div>
-    <h3>Символы латиницы</h3>
-    <table width="100%" style="font-family: Verdana,Arial,Tahoma; font-size: 13px; color: #444;">
+    <h2>Ссылки-мнемоники для символов ISO 8859-1</h2>
+    <table class="standard" cellpadding="5" cellspacing="0">
         <tbody>
-        <tr style="text-align: center;">
-            <th><strong>Описание символа</strong></th>
-            <th><strong>Обозначение</strong></th>
-            <th><strong>Вид</strong></th>
-        </tr>
-        <tr>
-            <td>неразрывный пробел</td>
-            <td>&amp;nbsp;</td>
-            <td align="center"></td>
-        </tr>
-        <tr>
-            <td>перевернутый восклицательный знак</td>
-            <td>&amp;iexcl;</td>
-            <td align="center">¡</td>
-        </tr>
-        <tr>
-            <td>цент</td>
-            <td>&amp;cent;</td>
-            <td align="center">¢</td>
-        </tr>
-        <tr>
-            <td>фунт стерлингов</td>
-            <td>&amp;pound;</td>
-            <td align="center">£</td>
-        </tr>
-        <tr>
-            <td>знак денежной единицы</td>
-            <td>&amp;curren;</td>
-            <td align="center">¤</td>
-        </tr>
-        <tr>
-            <td>йена</td>
-            <td>&amp;yen;</td>
-            <td align="center">¥</td>
-        </tr>
-        <tr>
-            <td>вертикальная черта</td>
-            <td>&amp;brvbar;</td>
-            <td align="center">¦</td>
-        </tr>
-        <tr>
-            <td>параграф</td>
-            <td>&amp;sect;</td>
-            <td align="center">§</td>
-        </tr>
-        <tr>
-            <td>диереза</td>
-            <td>&amp;uml;</td>
-            <td align="center">¨</td>
-        </tr>
-        <tr>
-            <td>знак авторского права</td>
-            <td>&amp;copy;</td>
-            <td align="center">©</td>
-        </tr>
-        <tr>
-            <td>показатель женского рода</td>
-            <td>&amp;ordf;</td>
-            <td align="center">ª</td>
-        </tr>
-        <tr>
-            <td>открывающая двойная угловая кавычка</td>
-            <td>&amp;laquo;</td>
-            <td align="center">«</td>
-        </tr>
-        <tr>
-            <td>знак отрицания</td>
-            <td>&amp;not;</td>
-            <td align="center">¬</td>
-        </tr>
-        <tr>
-            <td>мягкий перенос</td>
-            <td>&amp;shy;</td>
-            <td align="center">&shy;</td>
-        </tr>
-        <tr>
-            <td>охраняемый знак</td>
-            <td>&amp;reg;</td>
-            <td align="center">®</td>
-        </tr>
-        <tr>
-            <td>надчеркивание</td>
-            <td>&amp;macr;</td>
-            <td align="center">¯</td>
-        </tr>
-        <tr>
-            <td>градус</td>
-            <td>&amp;deg;</td>
-            <td align="center">°</td>
-        </tr>
-        <tr>
-            <td>плюс-минус</td>
-            <td>&amp;plusmn;</td>
-            <td align="center">±</td>
-        </tr>
-        <tr>
-            <td>вторая степень</td>
-            <td>&amp;sup2;</td>
-            <td align="center">²</td>
-        </tr>
-        <tr>
-            <td>третья степень</td>
-            <td>&amp;sup3;</td>
-            <td align="center">³</td>
-        </tr>
-        <tr>
-            <td>острое ударение</td>
-            <td>&amp;acute;</td>
-            <td align="center">´</td>
-        </tr>
-        <tr>
-            <td>знак микро</td>
-            <td>&amp;micro;</td>
-            <td align="center">µ</td>
-        </tr>
-        <tr>
-            <td>конец абзаца</td>
-            <td>&amp;para;</td>
-            <td align="center">¶</td>
-        </tr>
-        <tr>
-            <td>средняя точка</td>
-            <td>&amp;middot;</td>
-            <td align="center">·</td>
-        </tr>
-        <tr>
-            <td>седиль</td>
-            <td>&amp;cedil;</td>
-            <td align="center">¸</td>
-        </tr>
-        <tr>
-            <td>единица в верхнем индексе</td>
-            <td>&amp;sup1;</td>
-            <td align="center">¹</td>
-        </tr>
-        <tr>
-            <td>показатель мужского рода</td>
-            <td>&amp;ordm;</td>
-            <td align="center">º</td>
-        </tr>
-        <tr>
-            <td>закрывающая двойная угловая кавычка</td>
-            <td>&amp;raquo;</td>
-            <td align="center">»</td>
-        </tr>
-        <tr>
-            <td>одна четвертая</td>
-            <td>&amp;frac14;</td>
-            <td align="center">¼</td>
-        </tr>
-        <tr>
-            <td>одна вторая</td>
-            <td>&amp;frac12;</td>
-            <td align="center">½</td>
-        </tr>
-        <tr>
-            <td>три четверти</td>
-            <td>&amp;frac34;</td>
-            <td align="center">¾</td>
-        </tr>
-        <tr>
-            <td>перевернутый вопросительный знак</td>
-            <td>&amp;iquest;</td>
-            <td align="center">¿</td>
-        </tr>
-        <tr>
-            <td>A с тупым ударением</td>
-            <td>&amp;Agrave;</td>
-            <td align="center">À</td>
-        </tr>
-        <tr>
-            <td>A с острым ударением</td>
-            <td>&amp;Aacute;</td>
-            <td align="center">Á</td>
-        </tr>
-        <tr>
-            <td>A с циркумфлексом</td>
-            <td>&amp;Acirc;</td>
-            <td align="center">Â</td>
-        </tr>
-        <tr>
-            <td>A с тильдой</td>
-            <td>&amp;Atilde;</td>
-            <td align="center">Ã</td>
-        </tr>
-        <tr>
-            <td>A с диерезой</td>
-            <td>&amp;Auml;</td>
-            <td align="center">Ä</td>
-        </tr>
-        <tr>
-            <td>A с кружком</td>
-            <td>&amp;Aring;</td>
-            <td align="center">Å</td>
-        </tr>
-        <tr>
-            <td>лигатура AE</td>
-            <td>&amp;AElig;</td>
-            <td align="center">Æ</td>
-        </tr>
-        <tr>
-            <td>C с седилем</td>
-            <td>&amp;Ccedil;</td>
-            <td align="center">Ç</td>
-        </tr>
-        <tr>
-            <td>E с тупым ударением</td>
-            <td>&amp;Egrave;</td>
-            <td align="center">È</td>
-        </tr>
-        <tr>
-            <td>E с острым ударением</td>
-            <td>&amp;Eacute;</td>
-            <td align="center">É</td>
-        </tr>
-        <tr>
-            <td>E с циркумфлексом</td>
-            <td>&amp;Ecirc;</td>
-            <td align="center">Ê</td>
-        </tr>
-        <tr>
-            <td>E с диерезой</td>
-            <td>&amp;Euml;</td>
-            <td align="center">Ë</td>
-        </tr>
-        <tr>
-            <td>I с тупым ударением</td>
-            <td>&amp;Igrave;</td>
-            <td align="center">Ì</td>
-        </tr>
-        <tr>
-            <td>I с острым ударением</td>
-            <td>&amp;Iacute;</td>
-            <td align="center">Í</td>
-        </tr>
-        <tr>
-            <td>I с циркумфлексом</td>
-            <td>&amp;Icirc;</td>
-            <td align="center">Î</td>
-        </tr>
-        <tr>
-            <td>I с диерезой</td>
-            <td>&amp;Iuml;</td>
-            <td align="center">Ï</td>
-        </tr>
-        <tr>
-            <td>ETH</td>
-            <td>&amp;ETH;</td>
-            <td align="center">Ð</td>
-        </tr>
-        <tr>
-            <td>N с тильдой</td>
-            <td>&amp;Ntilde;</td>
-            <td align="center">Ñ</td>
-        </tr>
-        <tr>
-            <td>O с тупым ударением</td>
-            <td>&amp;Ograve;</td>
-            <td align="center">Ò</td>
-        </tr>
-        <tr>
-            <td>O с острым ударением</td>
-            <td>&amp;Oacute;</td>
-            <td align="center">Ó</td>
-        </tr>
-        <tr>
-            <td>O с циркумфлексом</td>
-            <td>&amp;Ocirc;</td>
-            <td align="center">Ô</td>
-        </tr>
-        <tr>
-            <td>O с тильдой</td>
-            <td>&amp;Otilde;</td>
-            <td align="center">Õ</td>
-        </tr>
-        <tr>
-            <td>O с диерезой</td>
-            <td>&amp;Ouml;</td>
-            <td align="center">Ö</td>
-        </tr>
-        <tr>
-            <td>знак умножения</td>
-            <td>&amp;times;</td>
-            <td align="center">×</td>
-        </tr>
-        <tr>
-            <td>O перечеркнутое</td>
-            <td>&amp;Oslash;</td>
-            <td align="center">Ø</td>
-        </tr>
-        <tr>
-            <td>U с тупым ударением</td>
-            <td>&amp;Ugrave;</td>
-            <td align="center">Ù</td>
-        </tr>
-        <tr>
-            <td>U с острым ударением</td>
-            <td>&amp;Uacute;</td>
-            <td align="center">Ú</td>
-        </tr>
-        <tr>
-            <td>U с циркумфлексом</td>
-            <td>&amp;Ucirc;</td>
-            <td align="center">Û</td>
-        </tr>
-        <tr>
-            <td>U с диерезой</td>
-            <td>&amp;Uuml;</td>
-            <td align="center">Ü</td>
-        </tr>
-        <tr>
-            <td>Y с острым ударением</td>
-            <td>&amp;Yacute;</td>
-            <td align="center">Ý</td>
-        </tr>
-        <tr>
-            <td>THORN</td>
-            <td>&amp;THORN;</td>
-            <td align="center">Þ</td>
-        </tr>
-        <tr>
-            <td>двойное s</td>
-            <td>&amp;szlig;</td>
-            <td align="center">ß</td>
-        </tr>
-        <tr>
-            <td>a с тупым ударением</td>
-            <td>&amp;agrave;</td>
-            <td align="center">à</td>
-        </tr>
-        <tr>
-            <td>a с острым ударением</td>
-            <td>&amp;aacute;</td>
-            <td align="center">á</td>
-        </tr>
-        <tr>
-            <td>a с циркумфлексом</td>
-            <td>&amp;acirc;</td>
-            <td align="center">â</td>
-        </tr>
-        <tr>
-            <td>a с тильдой</td>
-            <td>&amp;atilde;</td>
-            <td align="center">ã</td>
-        </tr>
-        <tr>
-            <td>a с диерезой</td>
-            <td>&amp;auml;</td>
-            <td align="center">ä</td>
-        </tr>
-        <tr>
-            <td>a с кружком</td>
-            <td>&amp;aring;</td>
-            <td align="center">å</td>
-        </tr>
-        <tr>
-            <td>лигатура ae</td>
-            <td>&amp;aelig;</td>
-            <td align="center">æ</td>
-        </tr>
-        <tr>
-            <td>c с седилем</td>
-            <td>&amp;ccedil;</td>
-            <td align="center">ç</td>
-        </tr>
-        <tr>
-            <td>e с тупым ударением</td>
-            <td>&amp;egrave;</td>
-            <td align="center">è</td>
-        </tr>
-        <tr>
-            <td>e с острым ударением</td>
-            <td>&amp;eacute;</td>
-            <td align="center">é</td>
-        </tr>
-        <tr>
-            <td>e с циркумфлексом</td>
-            <td>&amp;ecirc;</td>
-            <td align="center">ê</td>
-        </tr>
-        <tr>
-            <td>e с диерезой</td>
-            <td>&amp;euml;</td>
-            <td align="center">ë</td>
-        </tr>
-        <tr>
-            <td>i с тупым ударением</td>
-            <td>&amp;igrave;</td>
-            <td align="center">ì</td>
-        </tr>
-        <tr>
-            <td>i с острым ударением</td>
-            <td>&amp;iacute;</td>
-            <td align="center">í</td>
-        </tr>
-        <tr>
-            <td>i с циркумфлексом</td>
-            <td>&amp;icirc;</td>
-            <td align="center">î</td>
-        </tr>
-        <tr>
-            <td>i с диерезой</td>
-            <td>&amp;iuml;</td>
-            <td align="center">ï</td>
-        </tr>
-        <tr>
-            <td>eth</td>
-            <td>&amp;eth;</td>
-            <td align="center">ð</td>
-        </tr>
-        <tr>
-            <td>n с тильдой</td>
-            <td>&amp;ntilde;</td>
-            <td align="center">ñ</td>
-        </tr>
-        <tr>
-            <td>o с тупым ударением</td>
-            <td>&amp;ograve;</td>
-            <td align="center">ò</td>
-        </tr>
-        <tr>
-            <td>o с острым ударением</td>
-            <td>&amp;oacute;</td>
-            <td align="center">ó</td>
-        </tr>
-        <tr>
-            <td>o с циркумфлексом</td>
-            <td>&amp;ocirc;</td>
-            <td align="center">ô</td>
-        </tr>
-        <tr>
-            <td>o с тильдой</td>
-            <td>&amp;otilde;</td>
-            <td align="center">õ</td>
-        </tr>
-        <tr>
-            <td>o с диерезой</td>
-            <td>&amp;ouml;</td>
-            <td align="center">ö</td>
-        </tr>
-        <tr>
-            <td>знак деления</td>
-            <td>&amp;divide;</td>
-            <td align="center">÷</td>
-        </tr>
-        <tr>
-            <td>o перечеркнутое</td>
-            <td>&amp;oslash;</td>
-            <td align="center">ø</td>
-        </tr>
-        <tr>
-            <td>u с тупым ударением</td>
-            <td>&amp;ugrave;</td>
-            <td align="center">ù</td>
-        </tr>
-        <tr>
-            <td>u с острым ударением</td>
-            <td>&amp;uacute;</td>
-            <td align="center">ú</td>
-        </tr>
-        <tr>
-            <td>u с циркумфлексом</td>
-            <td>&amp;ucirc;</td>
-            <td align="center">û</td>
-        </tr>
-        <tr>
-            <td>u с диерезой</td>
-            <td>&amp;uuml;</td>
-            <td align="center">ü</td>
-        </tr>
-        <tr>
-            <td>y с острым ударением</td>
-            <td>&amp;yacute;</td>
-            <td align="center">ý</td>
-        </tr>
-        <tr>
-            <td>thorn</td>
-            <td>&amp;thorn;</td>
-            <td align="center">þ</td>
-        </tr>
         <tr>
-            <td>y с диерезой</td>
-            <td>&amp;yuml;</td>
-            <td align="center">ÿ</td>
+            <th>Символ
+            </th>
+            <th align="left">Назначение
+            </th>
+            <th>Мнемоника
+            </th>
+            <th>Код
+            </th>
+        </tr>
+        <tr>
+            <th>&nbsp;
+            </th>
+            <td>
+                неразрывный пробел
+            </td>
+            <td>&amp;nbsp;
+            </td>
+            <td>&amp;#160;
+            </td>
+        </tr>
+        <tr>
+            <th>¡
+            </th>
+            <td>
+                перевёрнутый восклицательный знак
+            </td>
+            <td>&amp;iexcl;
+            </td>
+            <td>&amp;#161;
+            </td>
+        </tr>
+        <tr>
+            <th>¢
+            </th>
+            <td>символ цента
+            </td>
+            <td>&amp;cent;
+            </td>
+            <td>&amp;#162;
+            </td>
+        </tr>
+        <tr>
+            <th>£
+            </th>
+            <td>символ фунта
+            </td>
+            <td>&amp;pound;
+            </td>
+            <td>&amp;#163;
+            </td>
+        </tr>
+        <tr>
+            <th>¤
+            </th>
+            <td>знак валюты
+            </td>
+            <td>&amp;curren;
+            </td>
+            <td>&amp;#164;
+            </td>
+        </tr>
+        <tr>
+            <th>¥
+            </th>
+            <td>символ
+                иены
+            </td>
+            <td>&amp;yen;
+            </td>
+            <td>&amp;#165;
+            </td>
+        </tr>
+        <tr>
+            <th>¦
+            </th>
+            <td>
+                разорванная вертикальная черта
+            </td>
+            <td>&amp;brvbar;
+            </td>
+            <td>&amp;#166;
+            </td>
+        </tr>
+        <tr>
+            <th>§
+            </th>
+            <td>знак параграфа
+            </td>
+            <td>&amp;sect;
+            </td>
+            <td>&amp;#167;
+            </td>
+        </tr>
+        <tr>
+            <th>¨
+            </th>
+            <td>
+                умлаут/трема
+            </td>
+            <td>&amp;uml;
+            </td>
+            <td>&amp;#168;
+            </td>
+        </tr>
+        <tr>
+            <th>©
+            </th>
+            <td>
+                знак охраны авторского права
+            </td>
+            <td>&amp;copy;
+            </td>
+            <td>&amp;#169;
+            </td>
+        </tr>
+        <tr>
+            <th>ª
+            </th>
+            <td>
+                порядковый индикатор (женский
+                    род)
+            </td>
+            <td>&amp;ordf;
+            </td>
+            <td>&amp;#170;
+            </td>
+        </tr>
+        <tr>
+            <th>«
+            </th>
+            <td>направленная влево двойная угловая кавычка
+            </td>
+            <td>&amp;laquo;
+            </td>
+            <td>&amp;#171;
+            </td>
+        </tr>
+        <tr>
+            <th>»
+            </th>
+            <td>направленная вправо двойная угловая кавычка
+            </td>
+            <td>&amp;raquo;
+            </td>
+            <td>&amp;#187;
+            </td>
+        </tr>
+        <tr>
+            <th>¬
+            </th>
+            <td>знак «отрицание» (скобка)
+            </td>
+            <td>&amp;not;
+            </td>
+            <td>&amp;#172;
+            </td>
+        </tr>
+        <tr>
+            <th>&shy;
+            </th>
+            <td>мягкий перенос (место возможного переноса)
+            </td>
+            <td>&amp;shy;
+            </td>
+            <td>&amp;#173;
+            </td>
+        </tr>
+        <tr>
+            <th>®
+            </th>
+            <td>
+                знак правовой охраны товарного знака<br>
+                    <small>не путать с «™»&nbsp;— символом товарного знака</small>
+            </td>
+            <td>&amp;reg;
+            </td>
+            <td>&amp;#174;
+            </td>
+        </tr>
+        <tr>
+            <th>¯
+            </th>
+            <td>
+                макрон
+            </td>
+            <td>&amp;macr;
+            </td>
+            <td>&amp;#175;
+            </td>
+        </tr>
+        <tr>
+            <th>°
+            </th>
+            <td>знак градуса
+            </td>
+            <td>&amp;deg;
+            </td>
+            <td>&amp;#176;
+            </td>
+        </tr>
+        <tr>
+            <th>±
+            </th>
+            <td>плюс-минус
+            </td>
+            <td>&amp;plusmn;
+            </td>
+            <td>&amp;#177;
+            </td>
+        </tr>
+        <tr>
+            <th>²
+            </th>
+            <td>верхний индекс «2»
+            </td>
+            <td>&amp;sup2;
+            </td>
+            <td>&amp;#178;
+            </td>
+        </tr>
+        <tr>
+            <th>³
+            </th>
+            <td>верхний индекс «3»
+            </td>
+            <td>&amp;sup3;
+            </td>
+            <td>&amp;#179;
+            </td>
+        </tr>
+        <tr>
+            <th>´
+            </th>
+            <td>акут
+            </td>
+            <td>&amp;acute;
+            </td>
+            <td>&amp;#180;
+            </td>
+        </tr>
+        <tr>
+            <th>µ
+            </th>
+            <td>значок микро
+            </td>
+            <td>&amp;micro;
+            </td>
+            <td>&amp;#181;
+            </td>
+        </tr>
+        <tr>
+            <th>¶
+            </th>
+            <td>знак
+                абзаца
+            </td>
+            <td>&amp;para;
+            </td>
+            <td>&amp;#182;
+            </td>
+        </tr>
+        <tr>
+            <th>·
+            </th>
+            <td>интерпункт
+            </td>
+            <td>&amp;middot;
+            </td>
+            <td>&amp;#183;
+            </td>
+        </tr>
+        <tr>
+            <th>¸
+            </th>
+            <td>седиль
+            </td>
+            <td>&amp;cedil;
+            </td>
+            <td>&amp;#184;
+            </td>
+        </tr>
+        <tr>
+            <th>¹
+            </th>
+            <td>верхний индекс «1»
+            </td>
+            <td>&amp;sup1;
+            </td>
+            <td>&amp;#185;
+            </td>
+        </tr>
+        <tr>
+            <th>º
+            </th>
+            <td>
+                порядковый индикатор (мужской
+                    род)
+            </td>
+            <td>&amp;ordm;
+            </td>
+            <td>&amp;#186;
+            </td>
+        </tr>
+        <tr>
+            <th>¼
+            </th>
+            <td>простая дробь «одна четвёртая»
+            </td>
+            <td>&amp;frac14;
+            </td>
+            <td>&amp;#188;
+            </td>
+        </tr>
+        <tr>
+            <th>½
+            </th>
+            <td>простая дробь «одна вторая»
+            </td>
+            <td>&amp;frac12;
+            </td>
+            <td>&amp;#189;
+            </td>
+        </tr>
+        <tr>
+            <th>⅓
+            </th>
+            <td>простая дробь «одна треть»
+            </td>
+            <td>
+            </td>
+            <td>&amp;#8531;
+            </td>
+        </tr>
+        <tr>
+            <th>¾
+            </th>
+            <td>простая дробь «три четверти»
+            </td>
+            <td>&amp;frac34;
+            </td>
+            <td>&amp;#190;
+            </td>
+        </tr>
+        <tr>
+            <th>¿
+            </th>
+            <td>
+                перевёрнутый знак вопроса
+            </td>
+            <td>&amp;iquest;
+            </td>
+            <td>&amp;#191;
+            </td>
+        </tr>
+        <tr>
+            <th>À
+            </th>
+            <td>латинская заглавная A с грависом («тупым ударением»)
+            </td>
+            <td>&amp;Agrave;
+            </td>
+            <td>&amp;#192;
+            </td>
+        </tr>
+        <tr>
+            <th>Á
+            </th>
+            <td>латинская заглавная A с акутом («острым ударением»)
+            </td>
+            <td>&amp;Aacute;
+            </td>
+            <td>&amp;#193;
+            </td>
+        </tr>
+        <tr>
+            <th>Â
+            </th>
+            <td>латинская заглавная A с циркумфлексом
+            </td>
+            <td>&amp;Acirc;
+            </td>
+            <td>&amp;#194;
+            </td>
+        </tr>
+        <tr>
+            <th>Ã
+            </th>
+            <td>латинская заглавная A с тильдой
+            </td>
+            <td>&amp;Atilde;
+            </td>
+            <td>&amp;#195;
+            </td>
+        </tr>
+        <tr>
+            <th>Ä
+            </th>
+            <td>латинская заглавная A с тремой
+            </td>
+            <td>&amp;Auml;
+            </td>
+            <td>&amp;#196;
+            </td>
+        </tr>
+        <tr>
+            <th>Å
+            </th>
+            <td>латинская заглавная A с кружком сверху
+            </td>
+            <td>&amp;Aring;
+            </td>
+            <td>&amp;#197;
+            </td>
+        </tr>
+        <tr>
+            <th>Æ
+            </th>
+            <td>латинская заглавная лигатура AE
+            </td>
+            <td>&amp;AElig;
+            </td>
+            <td>&amp;#198;
+            </td>
+        </tr>
+        <tr>
+            <th>Ç
+            </th>
+            <td>латинская заглавная C с седилью
+            </td>
+            <td>&amp;Ccedil;
+            </td>
+            <td>&amp;#199;
+            </td>
+        </tr>
+        <tr>
+            <th>È
+            </th>
+            <td>латинская заглавная E с грависом
+            </td>
+            <td>&amp;Egrave;
+            </td>
+            <td>&amp;#200;
+            </td>
+        </tr>
+        <tr>
+            <th>É
+            </th>
+            <td>латинская заглавная E с акутом
+            </td>
+            <td>&amp;Eacute;
+            </td>
+            <td>&amp;#201;
+            </td>
+        </tr>
+        <tr>
+            <th>Ê
+            </th>
+            <td>латинская заглавная E с циркумфлексом
+            </td>
+            <td>&amp;Ecirc;
+            </td>
+            <td>&amp;#202;
+            </td>
+        </tr>
+        <tr>
+            <th>Ë
+            </th>
+            <td>латинская заглавная E с тремой
+            </td>
+            <td>&amp;Euml;
+            </td>
+            <td>&amp;#203;
+            </td>
+        </tr>
+        <tr>
+            <th>Ì
+            </th>
+            <td>латинская заглавная I с грависом
+            </td>
+            <td>&amp;Igrave;
+            </td>
+            <td>&amp;#204;
+            </td>
+        </tr>
+        <tr>
+            <th>Í
+            </th>
+            <td>латинская заглавная I с акутом
+            </td>
+            <td>&amp;Iacute;
+            </td>
+            <td>&amp;#205;
+            </td>
+        </tr>
+        <tr>
+            <th>Î
+            </th>
+            <td>латинская заглавная I с циркумфлексом
+            </td>
+            <td>&amp;Icirc;
+            </td>
+            <td>&amp;#206;
+            </td>
+        </tr>
+        <tr>
+            <th>Ï
+            </th>
+            <td>латинская заглавная I с тремой
+            </td>
+            <td>&amp;Iuml;
+            </td>
+            <td>&amp;#207;
+            </td>
+        </tr>
+        <tr>
+            <th>Ð
+            </th>
+            <td>латинская заглавная буква «eth»
+            </td>
+            <td>&amp;ETH;
+            </td>
+            <td>&amp;#208;
+            </td>
+        </tr>
+        <tr>
+            <th>Ñ
+            </th>
+            <td>латинская заглавная N с тильдой
+            </td>
+            <td>&amp;Ntilde;
+            </td>
+            <td>&amp;#209;
+            </td>
+        </tr>
+        <tr>
+            <th>Ò
+            </th>
+            <td>латинская заглавная O с грависом
+            </td>
+            <td>&amp;Ograve;
+            </td>
+            <td>&amp;#210;
+            </td>
+        </tr>
+        <tr>
+            <th>Ó
+            </th>
+            <td>латинская заглавная O с акутом
+            </td>
+            <td>&amp;Oacute;
+            </td>
+            <td>&amp;#211;
+            </td>
+        </tr>
+        <tr>
+            <th>Ô
+            </th>
+            <td>латинская заглавная O с циркумфлексом
+            </td>
+            <td>&amp;Ocirc;
+            </td>
+            <td>&amp;#212;
+            </td>
+        </tr>
+        <tr>
+            <th>Õ
+            </th>
+            <td>латинская заглавная O с тильдой
+            </td>
+            <td>&amp;Otilde;
+            </td>
+            <td>&amp;#213;
+            </td>
+        </tr>
+        <tr>
+            <th>Ö
+            </th>
+            <td>латинская заглавная O с тремой
+            </td>
+            <td>&amp;Ouml;
+            </td>
+            <td>&amp;#214;
+            </td>
+        </tr>
+        <tr>
+            <th>×
+            </th>
+            <td>знак умножения
+            </td>
+            <td>&amp;times;
+            </td>
+            <td>&amp;#215;
+            </td>
+        </tr>
+        <tr>
+            <th>Ø
+            </th>
+            <td>латинская заглавная O диагонально перечёркнутая
+            </td>
+            <td>&amp;Oslash;
+            </td>
+            <td>&amp;#216;
+            </td>
+        </tr>
+        <tr>
+            <th>Ù
+            </th>
+            <td>латинская заглавная U с грависом
+            </td>
+            <td>&amp;Ugrave;
+            </td>
+            <td>&amp;#217;
+            </td>
+        </tr>
+        <tr>
+            <th>Ú
+            </th>
+            <td>латинская заглавная U с акутом
+            </td>
+            <td>&amp;Uacute;
+            </td>
+            <td>&amp;#218;
+            </td>
+        </tr>
+        <tr>
+            <th>Û
+            </th>
+            <td>латинская заглавная U с циркумфлексом
+            </td>
+            <td>&amp;Ucirc;
+            </td>
+            <td>&amp;#219;
+            </td>
+        </tr>
+        <tr>
+            <th>Ü
+            </th>
+            <td>латинская заглавная U с тремой
+            </td>
+            <td>&amp;Uuml;
+            </td>
+            <td>&amp;#220;
+            </td>
+        </tr>
+        <tr>
+            <th>Ý
+            </th>
+            <td>латинская заглавная Y с акутом
+            </td>
+            <td>&amp;Yacute;
+            </td>
+            <td>&amp;#221;
+            </td>
+        </tr>
+        <tr>
+            <th>Þ
+            </th>
+            <td>латинская заглавная буква Торн (THORN)
+            </td>
+            <td>&amp;THORN;
+            </td>
+            <td>&amp;#222;
+            </td>
+        </tr>
+        <tr>
+            <th>ß
+            </th>
+            <td>латинская буква эсцет
+            </td>
+            <td>&amp;szlig;
+            </td>
+            <td>&amp;#223;
+            </td>
+        </tr>
+        <tr>
+            <th>à
+            </th>
+            <td>латинская "a" с грависом
+            </td>
+            <td>&amp;agrave;
+            </td>
+            <td>&amp;#224;
+            </td>
+        </tr>
+        <tr>
+            <th>á
+            </th>
+            <td>латинская "a" с акутом
+            </td>
+            <td>&amp;aacute;
+            </td>
+            <td>&amp;#225;
+            </td>
+        </tr>
+        <tr>
+            <th>â
+            </th>
+            <td>латинская "a" с циркумфлексом
+            </td>
+            <td>&amp;acirc;
+            </td>
+            <td>&amp;#226;
+            </td>
+        </tr>
+        <tr>
+            <th>ã
+            </th>
+            <td>латинская "a" с тильдой
+            </td>
+            <td>&amp;atilde;
+            </td>
+            <td>&amp;#227;
+            </td>
+        </tr>
+        <tr>
+            <th>ä
+            </th>
+            <td>латинская "a" с тремой
+            </td>
+            <td>&amp;auml;
+            </td>
+            <td>&amp;#228;
+            </td>
+        </tr>
+        <tr>
+            <th>å
+            </th>
+            <td>латинская "a" с кружком сверху
+            </td>
+            <td>&amp;aring;
+            </td>
+            <td>&amp;#229;
+            </td>
+        </tr>
+        <tr>
+            <th>æ
+            </th>
+            <td>латинская "ae"
+            </td>
+            <td>&amp;aelig;
+            </td>
+            <td>&amp;#230;
+            </td>
+        </tr>
+        <tr>
+            <th>ç
+            </th>
+            <td>латинская "c" седилья
+            </td>
+            <td>&amp;ccedil;
+            </td>
+            <td>&amp;#231;
+            </td>
+        </tr>
+        <tr>
+            <th>è
+            </th>
+            <td>латинская "e" с грависом
+            </td>
+            <td>&amp;egrave;
+            </td>
+            <td>&amp;#232;
+            </td>
+        </tr>
+        <tr>
+            <th>é
+            </th>
+            <td>латинская "e" с акутом
+            </td>
+            <td>&amp;eacute;
+            </td>
+            <td>&amp;#233;
+            </td>
+        </tr>
+        <tr>
+            <th>ê
+            </th>
+            <td>латинская "e" с циркумфлексом
+            </td>
+            <td>&amp;ecirc;
+            </td>
+            <td>&amp;#234;
+            </td>
+        </tr>
+        <tr>
+            <th>ë
+            </th>
+            <td>латинская "e" с тремой
+            </td>
+            <td>&amp;euml;
+            </td>
+            <td>&amp;#235;
+            </td>
+        </tr>
+        <tr>
+            <th>ì
+            </th>
+            <td>латинская "i" с грависом
+            </td>
+            <td>&amp;igrave;
+            </td>
+            <td>&amp;#236;
+            </td>
+        </tr>
+        <tr>
+            <th>í
+            </th>
+            <td>латинская "i" с акутом
+            </td>
+            <td>&amp;iacute;
+            </td>
+            <td>&amp;#237;
+            </td>
+        </tr>
+        <tr>
+            <th>î
+            </th>
+            <td>латинская "i" с циркумфлексом
+            </td>
+            <td>&amp;icirc;
+            </td>
+            <td>&amp;#238;
+            </td>
+        </tr>
+        <tr>
+            <th>ï
+            </th>
+            <td>латинская "i" с тремой
+            </td>
+            <td>&amp;iuml;
+            </td>
+            <td>&amp;#239;
+            </td>
+        </tr>
+        <tr>
+            <th>ð
+            </th>
+            <td>латинская "eth"
+            </td>
+            <td>&amp;eth;
+            </td>
+            <td>&amp;#240;
+            </td>
+        </tr>
+        <tr>
+            <th>ñ
+            </th>
+            <td>латинская "n" с тильдой
+            </td>
+            <td>&amp;ntilde;
+            </td>
+            <td>&amp;#241;
+            </td>
+        </tr>
+        <tr>
+            <th>ò
+            </th>
+            <td>латинская "o" с грависом
+            </td>
+            <td>&amp;ograve;
+            </td>
+            <td>&amp;#242;
+            </td>
+        </tr>
+        <tr>
+            <th>ó
+            </th>
+            <td>латинская "o" с акутом
+            </td>
+            <td>&amp;oacute;
+            </td>
+            <td>&amp;#243;
+            </td>
+        </tr>
+        <tr>
+            <th>ô
+            </th>
+            <td>латинская "o" с циркумфлексом
+            </td>
+            <td>&amp;ocirc;
+            </td>
+            <td>&amp;#244;
+            </td>
+        </tr>
+        <tr>
+            <th>õ
+            </th>
+            <td>латинская "o" с тильдой
+            </td>
+            <td>&amp;otilde;
+            </td>
+            <td>&amp;#245;
+            </td>
+        </tr>
+        <tr>
+            <th>ö
+            </th>
+            <td>латинская "o" с тремой
+            </td>
+            <td>&amp;ouml;
+            </td>
+            <td>&amp;#246;
+            </td>
+        </tr>
+        <tr>
+            <th>÷
+            </th>
+            <td>знак деления
+            </td>
+            <td>&amp;divide;
+            </td>
+            <td>&amp;#247;
+            </td>
+        </tr>
+        <tr>
+            <th>ø
+            </th>
+            <td>латинская "o" диагонально перечёркнутая
+            </td>
+            <td>&amp;oslash;
+            </td>
+            <td>&amp;#248;
+            </td>
+        </tr>
+        <tr>
+            <th>ù
+            </th>
+            <td>латинская "u" с грависом
+            </td>
+            <td>&amp;ugrave;
+            </td>
+            <td>&amp;#249;
+            </td>
+        </tr>
+        <tr>
+            <th>ú
+            </th>
+            <td>латинская "u" с акутом
+            </td>
+            <td>&amp;uacute;
+            </td>
+            <td>&amp;#250;
+            </td>
+        </tr>
+        <tr>
+            <th>û
+            </th>
+            <td>латинская "u" с циркумфлексом
+            </td>
+            <td>&amp;ucirc;
+            </td>
+            <td>&amp;#251;
+            </td>
+        </tr>
+        <tr>
+            <th>ü
+            </th>
+            <td>латинская "u" с тремой
+            </td>
+            <td>&amp;uuml;
+            </td>
+            <td>&amp;#252;
+            </td>
+        </tr>
+        <tr>
+            <th>ý
+            </th>
+            <td>латинская "y" с акутом
+            </td>
+            <td>&amp;yacute;
+            </td>
+            <td>&amp;#253;
+            </td>
+        </tr>
+        <tr>
+            <th>þ
+            </th>
+            <td>латинская буква "торн" (thorn)
+            </td>
+            <td>&amp;thorn;
+            </td>
+            <td>&amp;#254;
+            </td>
+        </tr>
+        <tr>
+            <th>ÿ
+            </th>
+            <td>латинская "y" с тремой
+            </td>
+            <td>&amp;yuml;
+            </td>
+            <td>&amp;#255;
+            </td>
         </tr>
         </tbody>
     </table>
-    <h3>Специальные символы</h3>
-    <table width="100%" style="font-family: Verdana,Arial,Tahoma; font-size: 13px; color: #444;">
+    <h2>Ссылки-мнемоники для символов, математических символов и греческих букв</h2>
+    <table class="standard" cellpadding="5" cellspacing="0">
         <tbody>
-        <tr style="text-align: center;">
-            <th><strong>Описание символа</strong></th>
-            <th><strong>Обозначение</strong></th>
-            <th><strong>Вид</strong></th>
+        <tr>
+            <th>Символ
+            </th>
+            <th align="left">Назначение
+            </th>
+            <th>Мнемоника
+            </th>
+            <th>Код
+            </th>
         </tr>
         <tr>
-            <td>кавычка</td>
-            <td>&amp;quot;</td>
-            <td align="center">"</td>
+            <th colspan="4">Латинские
+            </th>
         </tr>
         <tr>
-            <td>амперсант</td>
-            <td>&amp;amp;</td>
-            <td align="center">&amp;</td>
+            <th>ƒ
+            </th>
+            <td>латинская f с хвостиком
+            </td>
+            <td>&amp;fnof;
+            </td>
+            <td>&amp;#402;
+            </td>
         </tr>
         <tr>
-            <td>левая угловая скобка</td>
-            <td>&amp;lt;</td>
-            <td align="center">&lt;</td>
+            <th colspan="4">Греческие
+            </th>
         </tr>
         <tr>
-            <td>правая угловая скобка</td>
-            <td>&amp;gt;</td>
-            <td align="center">&gt;</td>
+            <th>Α
+            </th>
+            <td>греческая заглавная альфа
+            </td>
+            <td>&amp;Alpha;
+            </td>
+            <td>&amp;#913;
+            </td>
         </tr>
         <tr>
-            <td>лигатура OE</td>
-            <td>&amp;OElig;</td>
-            <td align="center">Œ</td>
+            <th>Β
+            </th>
+            <td>греческая заглавная бета
+            </td>
+            <td>&amp;Beta;
+            </td>
+            <td>&amp;#914;
+            </td>
         </tr>
         <tr>
-            <td>лигатура oe</td>
-            <td>&amp;oelig;</td>
-            <td align="center">œ</td>
+            <th>Γ
+            </th>
+            <td>греческая заглавная гамма
+            </td>
+            <td>&amp;Gamma;
+            </td>
+            <td>&amp;#915;
+            </td>
         </tr>
         <tr>
-            <td>S с птичкой</td>
-            <td>&amp;Scaron;</td>
-            <td align="center">Š</td>
+            <th>Δ
+            </th>
+            <td>греческая заглавная дельта
+            </td>
+            <td>&amp;Delta;
+            </td>
+            <td>&amp;#916;
+            </td>
         </tr>
         <tr>
-            <td>s с птичкой</td>
-            <td>&amp;scaron;</td>
-            <td align="center">š</td>
+            <th>Ε
+            </th>
+            <td>греческая заглавная эпсилон
+            </td>
+            <td>&amp;Epsilon;
+            </td>
+            <td>&amp;#917;
+            </td>
         </tr>
         <tr>
-            <td>Y с диерезой</td>
-            <td>&amp;Yuml;</td>
-            <td align="center">Ÿ</td>
+            <th>Ζ
+            </th>
+            <td>греческая заглавная дзета
+            </td>
+            <td>&amp;Zeta;
+            </td>
+            <td>&amp;#918;
+            </td>
         </tr>
         <tr>
-            <td>циркумфлекс</td>
-            <td>&amp;circ;</td>
-            <td align="center">ˆ</td>
+            <th>Η
+            </th>
+            <td>греческая заглавная эта
+            </td>
+            <td>&amp;Eta;
+            </td>
+            <td>&amp;#919;
+            </td>
         </tr>
         <tr>
-            <td>малая тильда</td>
-            <td>&amp;tilde;</td>
-            <td align="center">˜</td>
+            <th>Θ
+            </th>
+            <td>греческая заглавная тета
+            </td>
+            <td>&amp;Theta;
+            </td>
+            <td>&amp;#920;
+            </td>
         </tr>
         <tr>
-            <td>короткий пробел</td>
-            <td>&amp;ensp;</td>
-            <td align="center"></td>
+            <th>Ι
+            </th>
+            <td>греческая заглавная йота
+            </td>
+            <td>&amp;Iota;
+            </td>
+            <td>&amp;#921;
+            </td>
         </tr>
         <tr>
-            <td>длинный пробел</td>
-            <td>&amp;emsp;</td>
-            <td align="center"></td>
+            <th>Κ
+            </th>
+            <td>греческая заглавная каппа
+            </td>
+            <td>&amp;Kappa;
+            </td>
+            <td>&amp;#922;
+            </td>
         </tr>
         <tr>
-            <td>узкий пробел</td>
-            <td>&amp;thinsp;</td>
-            <td align="center"></td>
+            <th>Λ
+            </th>
+            <td>греческая заглавная лямбда
+            </td>
+            <td>&amp;Lambda;
+            </td>
+            <td>&amp;#923;
+            </td>
         </tr>
         <tr>
-            <td>разделитель нулевой ширины</td>
-            <td>&amp;zwnj;</td>
-            <td align="center">&zwnj;</td>
+            <th>Μ
+            </th>
+            <td>греческая заглавная мю
+            </td>
+            <td>&amp;Mu;
+            </td>
+            <td>&amp;#924;
+            </td>
         </tr>
         <tr>
-            <td>соединитель нулевой ширины</td>
-            <td>&amp;zwj;</td>
-            <td align="center">&zwj;</td>
+            <th>Ν
+            </th>
+            <td>греческая заглавная ню
+            </td>
+            <td>&amp;Nu;
+            </td>
+            <td>&amp;#925;
+            </td>
         </tr>
         <tr>
-            <td>указатель слева направо</td>
-            <td>&amp;lrm;</td>
-            <td align="center">&lrm;</td>
+            <th>Ξ
+            </th>
+            <td>греческая заглавная кси
+            </td>
+            <td>&amp;Xi;
+            </td>
+            <td>&amp;#926;
+            </td>
         </tr>
         <tr>
-            <td>указатель справа налево</td>
-            <td>&amp;rlm;</td>
-            <td align="center">&rlm;</td>
+            <th>Ο
+            </th>
+            <td>греческая заглавная омикрон
+            </td>
+            <td>&amp;Omicron;
+            </td>
+            <td>&amp;#927;
+            </td>
         </tr>
         <tr>
-            <td>короткое тире</td>
-            <td>&amp;ndash;</td>
-            <td align="center">–</td>
+            <th>Π
+            </th>
+            <td>греческая заглавная пи
+            </td>
+            <td>&amp;Pi;
+            </td>
+            <td>&amp;#928;
+            </td>
         </tr>
         <tr>
-            <td>длинное тире</td>
-            <td>&amp;mdash;</td>
-            <td align="center">—</td>
+            <th>Ρ
+            </th>
+            <td>греческая заглавная ро
+            </td>
+            <td>&amp;Rho;
+            </td>
+            <td>&amp;#929;
+            </td>
         </tr>
         <tr>
-            <td>открывающая одинарная кавычка</td>
-            <td>&amp;lsquo;</td>
-            <td align="center">‘</td>
+            <th>Σ
+            </th>
+            <td>греческая заглавная сигма
+            </td>
+            <td>&amp;Sigma;
+            </td>
+            <td>&amp;#931;
+            </td>
         </tr>
         <tr>
-            <td>закрывающая одинарная кавычка</td>
-            <td>&amp;rsquo;</td>
-            <td align="center">’</td>
+            <th>Τ
+            </th>
+            <td>греческая заглавная тау
+            </td>
+            <td>&amp;Tau;
+            </td>
+            <td>&amp;#932;
+            </td>
         </tr>
         <tr>
-            <td>нижняя одинарная кавычка</td>
-            <td>&amp;sbquo;</td>
-            <td align="center">‚</td>
+            <th>Υ
+            </th>
+            <td>греческая заглавная ипсилон
+            </td>
+            <td>&amp;Upsilon;
+            </td>
+            <td>&amp;#933;
+            </td>
         </tr>
         <tr>
-            <td>открывающая двойная кавычка</td>
-            <td>&amp;ldquo;</td>
-            <td align="center">“</td>
+            <th>Φ
+            </th>
+            <td>греческая заглавная фи
+            </td>
+            <td>&amp;Phi;
+            </td>
+            <td>&amp;#934;
+            </td>
         </tr>
         <tr>
-            <td>закрывающая двойная кавычка</td>
-            <td>&amp;rdquo;</td>
-            <td align="center">”</td>
+            <th>Χ
+            </th>
+            <td>греческая заглавная хи
+            </td>
+            <td>&amp;Chi;
+            </td>
+            <td>&amp;#935;
+            </td>
         </tr>
         <tr>
-            <td>нижняя двойная кавычка</td>
-            <td>&amp;bdquo;</td>
-            <td align="center">„</td>
+            <th>Ψ
+            </th>
+            <td>греческая заглавная пси
+            </td>
+            <td>&amp;Psi;
+            </td>
+            <td>&amp;#936;
+            </td>
         </tr>
         <tr>
-            <td>кинжал</td>
-            <td>&amp;dagger;</td>
-            <td align="center">†</td>
+            <th>Ω
+            </th>
+            <td>греческая заглавная омега
+            </td>
+            <td>&amp;Omega;
+            </td>
+            <td>&amp;#937;
+            </td>
         </tr>
         <tr>
-            <td>двойной кинжал</td>
-            <td>&amp;Dagger;</td>
-            <td align="center">‡</td>
+            <th>α
+            </th>
+            <td>греческая строчная альфа
+            </td>
+            <td>&amp;alpha;
+            </td>
+            <td>&amp;#945;
+            </td>
         </tr>
         <tr>
-            <td>знак промилле</td>
-            <td>&amp;permil;</td>
-            <td align="center">‰</td>
+            <th>β
+            </th>
+            <td>греческая строчная бета
+            </td>
+            <td>&amp;beta;
+            </td>
+            <td>&amp;#946;
+            </td>
         </tr>
         <tr>
-            <td>открывающая угловая кавычка</td>
-            <td>&amp;lsaquo;</td>
-            <td align="center">‹</td>
+            <th>γ
+            </th>
+            <td>греческая строчная гамма
+            </td>
+            <td>&amp;gamma;
+            </td>
+            <td>&amp;#947;
+            </td>
         </tr>
         <tr>
-            <td>закрывающая угловая кавычка</td>
-            <td>&amp;rsaquo;</td>
-            <td align="center">›</td>
+            <th>δ
+            </th>
+            <td>греческая строчная дельта
+            </td>
+            <td>&amp;delta;
+            </td>
+            <td>&amp;#948;
+            </td>
         </tr>
         <tr>
-            <td>евро</td>
-            <td>&amp;euro;</td>
-            <td align="center">€</td>
+            <th>ε
+            </th>
+            <td>греческая строчная эпсилон
+            </td>
+            <td>&amp;epsilon;
+            </td>
+            <td>&amp;#949;
+            </td>
+        </tr>
+        <tr>
+            <th>ζ
+            </th>
+            <td>греческая строчная дзета
+            </td>
+            <td>&amp;zeta;
+            </td>
+            <td>&amp;#950;
+            </td>
+        </tr>
+        <tr>
+            <th>η
+            </th>
+            <td>греческая строчная эта
+            </td>
+            <td>&amp;eta;
+            </td>
+            <td>&amp;#951;
+            </td>
+        </tr>
+        <tr>
+            <th>θ
+            </th>
+            <td>греческая строчная тета
+            </td>
+            <td>&amp;theta;
+            </td>
+            <td>&amp;#952;
+            </td>
+        </tr>
+        <tr>
+            <th>ι
+            </th>
+            <td>греческая строчная йота
+            </td>
+            <td>&amp;iota;
+            </td>
+            <td>&amp;#953;
+            </td>
+        </tr>
+        <tr>
+            <th>κ
+            </th>
+            <td>греческая строчная каппа
+            </td>
+            <td>&amp;kappa;
+            </td>
+            <td>&amp;#954;
+            </td>
+        </tr>
+        <tr>
+            <th>λ
+            </th>
+            <td>греческая строчная ламбда
+            </td>
+            <td>&amp;lambda;
+            </td>
+            <td>&amp;#955;
+            </td>
+        </tr>
+        <tr>
+            <th>μ
+            </th>
+            <td>греческая строчная мю
+            </td>
+            <td>&amp;mu;
+            </td>
+            <td>&amp;#956;
+            </td>
+        </tr>
+        <tr>
+            <th>ν
+            </th>
+            <td>греческая строчная ню
+            </td>
+            <td>&amp;nu;
+            </td>
+            <td>&amp;#957;
+            </td>
+        </tr>
+        <tr>
+            <th>ξ
+            </th>
+            <td>греческая строчная кси
+            </td>
+            <td>&amp;xi;
+            </td>
+            <td>&amp;#958;
+            </td>
+        </tr>
+        <tr>
+            <th>ο
+            </th>
+            <td>греческая строчная омикрон
+            </td>
+            <td>&amp;omicron;
+            </td>
+            <td>&amp;#959;
+            </td>
+        </tr>
+        <tr>
+            <th>π
+            </th>
+            <td>греческая строчная пи
+            </td>
+            <td>&amp;pi;
+            </td>
+            <td>&amp;#960;
+            </td>
+        </tr>
+        <tr>
+            <th>ρ
+            </th>
+            <td>греческая строчная ро
+            </td>
+            <td>&amp;rho;
+            </td>
+            <td>&amp;#961;
+            </td>
+        </tr>
+        <tr>
+            <th>ς
+            </th>
+            <td>греческая конечная сигма
+            </td>
+            <td>&amp;sigmaf;
+            </td>
+            <td>&amp;#962;
+            </td>
+        </tr>
+        <tr>
+            <th>σ
+            </th>
+            <td>греческая строчная сигма
+            </td>
+            <td>&amp;sigma;
+            </td>
+            <td>&amp;#963;
+            </td>
+        </tr>
+        <tr>
+            <th>τ
+            </th>
+            <td>греческая строчная тау
+            </td>
+            <td>&amp;tau;
+            </td>
+            <td>&amp;#964;
+            </td>
+        </tr>
+        <tr>
+            <th>υ
+            </th>
+            <td>греческая строчная ипсилон
+            </td>
+            <td>&amp;upsilon;
+            </td>
+            <td>&amp;#965;
+            </td>
+        </tr>
+        <tr>
+            <th>φ
+            </th>
+            <td>греческая строчная фи
+            </td>
+            <td>&amp;phi;
+            </td>
+            <td>&amp;#966;
+            </td>
+        </tr>
+        <tr>
+            <th>χ
+            </th>
+            <td>греческая строчная хи
+            </td>
+            <td>&amp;chi;
+            </td>
+            <td>&amp;#967;
+            </td>
+        </tr>
+        <tr>
+            <th>ψ
+            </th>
+            <td>греческая строчная пси
+            </td>
+            <td>&amp;psi;
+            </td>
+            <td>&amp;#968;
+            </td>
+        </tr>
+        <tr>
+            <th>ω
+            </th>
+            <td>греческая строчная омега
+            </td>
+            <td>&amp;omega;
+            </td>
+            <td>&amp;#969;
+            </td>
+        </tr>
+        <tr>
+            <th>ϑ
+            </th>
+            <td>греческая символьная тета
+            </td>
+            <td>&amp;thetasym;
+            </td>
+            <td>&amp;#977;
+            </td>
+        </tr>
+        <tr>
+            <th>ϒ
+            </th>
+            <td>греческий ипсилон с хвостиком
+            </td>
+            <td>&amp;upsih;
+            </td>
+            <td>&amp;#978;
+            </td>
+        </tr>
+        <tr>
+            <th>ϖ
+            </th>
+            <td>греческая строчная пи (другой вариант)
+            </td>
+            <td>&amp;piv;
+            </td>
+            <td>&amp;#982;
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Основная пунктуация
+            </th>
+        </tr>
+        <tr>
+            <th>•
+            </th>
+            <td>маркер списка (буллит)
+            </td>
+            <td>&amp;bull;
+            </td>
+            <td>&amp;#8226;
+            </td>
+        </tr>
+        <tr>
+            <th>…
+            </th>
+            <td>горизонтальное многоточие
+            </td>
+            <td>&amp;hellip;
+            </td>
+            <td>&amp;#8230;
+            </td>
+        </tr>
+        <tr>
+            <th>′
+            </th>
+            <td>штрих
+            </td>
+            <td>&amp;prime;
+            </td>
+            <td>&amp;#8242;
+            </td>
+        </tr>
+        <tr>
+            <th>″
+            </th>
+            <td>
+                двойной штрих
+            </td>
+            <td>&amp;Prime;
+            </td>
+            <td>&amp;#8243;
+            </td>
+        </tr>
+        <tr>
+            <th>‾
+            </th>
+            <td>
+                верхняя черта
+            </td>
+            <td>&amp;oline;
+            </td>
+            <td>&amp;#8254;
+            </td>
+        </tr>
+        <tr>
+            <th>⁄
+            </th>
+            <td>косая
+                черта
+            </td>
+            <td>&amp;frasl;
+            </td>
+            <td>&amp;#8260;
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Буквоподобные символы
+            </th>
+        </tr>
+        <tr>
+            <th>℘
+            </th>
+            <td>рукописная заглавная P = power set = Weierstrass p
+            </td>
+            <td>&amp;weierp;
+            </td>
+            <td>&amp;#8472;
+            </td>
+        </tr>
+        <tr>
+            <th>ℑ
+            </th>
+            <td>чёрная заглавная I = мнимая часть
+            </td>
+            <td>&amp;image;
+            </td>
+            <td>&amp;#8465;
+            </td>
+        </tr>
+        <tr>
+            <th>ℜ
+            </th>
+            <td>чёрная заглавная R = вещественная часть
+            </td>
+            <td>&amp;real;
+            </td>
+            <td>&amp;#8476;
+            </td>
+        </tr>
+        <tr>
+            <th>™
+            </th>
+            <td>товарный знак
+            </td>
+            <td>&amp;trade;
+            </td>
+            <td>&amp;#8482;
+            </td>
+        </tr>
+        <tr>
+            <th>ℵ
+            </th>
+            <td>буква Алеф — кардинальное число
+            </td>
+            <td>&amp;alefsym;
+            </td>
+            <td>&amp;#8501;
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Стрелки
+            </th>
+        </tr>
+        <tr>
+            <th>←
+            </th>
+            <td>влево
+            </td>
+            <td>&amp;larr;
+            </td>
+            <td>&amp;#8592;
+            </td>
+        </tr>
+        <tr>
+            <th>↑
+            </th>
+            <td>вверх
+            </td>
+            <td>&amp;uarr;
+            </td>
+            <td>&amp;#8593;
+            </td>
+        </tr>
+        <tr>
+            <th>→
+            </th>
+            <td>вправо
+            </td>
+            <td>&amp;rarr;
+            </td>
+            <td>&amp;#8594;
+            </td>
+        </tr>
+        <tr>
+            <th>↓
+            </th>
+            <td>вниз
+            </td>
+            <td>&amp;darr;
+            </td>
+            <td>&amp;#8595;
+            </td>
+        </tr>
+        <tr>
+            <th>◄
+            </th>
+            <td>влево
+            </td>
+            <td>
+            </td>
+            <td>&amp;#9668;
+            </td>
+        </tr>
+        <tr>
+            <th>▲
+            </th>
+            <td>вверх
+            </td>
+            <td>
+            </td>
+            <td>&amp;#9650;
+            </td>
+        </tr>
+        <tr>
+            <th>►
+            </th>
+            <td>вправо
+            </td>
+            <td>
+            </td>
+            <td>&amp;#9658;
+            </td>
+        </tr>
+        <tr>
+            <th>▼
+            </th>
+            <td>вниз
+            </td>
+            <td>
+            </td>
+            <td>&amp;#9660;
+            </td>
+        </tr>
+        <tr>
+            <th>↔
+            </th>
+            <td>влево-вправо
+            </td>
+            <td>&amp;harr;
+            </td>
+            <td>&amp;#8596;
+            </td>
+        </tr>
+        <tr>
+            <th>↵
+            </th>
+            <td>вниз с углом вправо = возврат каретки
+            </td>
+            <td>&amp;crarr;
+            </td>
+            <td>&amp;#8629;
+            </td>
+        </tr>
+        <tr>
+            <th>⇐
+            </th>
+            <td>двойная стрелка влево
+            </td>
+            <td>&amp;lArr;
+            </td>
+            <td>&amp;#8656;
+            </td>
+        </tr>
+        <tr>
+            <th>⇑
+            </th>
+            <td>двойная вверх
+            </td>
+            <td>&amp;uArr;
+            </td>
+            <td>&amp;#8657;
+            </td>
+        </tr>
+        <tr>
+            <th>⇒
+            </th>
+            <td>двойная вправо
+            </td>
+            <td>&amp;rArr;
+            </td>
+            <td>&amp;#8658;
+            </td>
+        </tr>
+        <tr>
+            <th>⇓
+            </th>
+            <td>двойная вниз
+            </td>
+            <td>&amp;dArr;
+            </td>
+            <td>&amp;#8659;
+            </td>
+        </tr>
+        <tr>
+            <th>⇔
+            </th>
+            <td>двойная влево-вправо
+            </td>
+            <td>&amp;hArr;
+            </td>
+            <td>&amp;#8660;
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Математические операции
+            </th>
+        </tr>
+        <tr>
+            <th>[
+            </th>
+            <td>левая квадратная скобка
+            </td>
+            <td>
+            </td>
+            <td>&amp;#91;
+            </td>
+        </tr>
+        <tr>
+            <th>]
+            </th>
+            <td>правая квадратная скобка
+            </td>
+            <td>
+            </td>
+            <td>&amp;#93;
+            </td>
+        </tr>
+        <tr>
+            <th>/
+            </th>
+            <td>
+                деление
+            </td>
+            <td>
+            </td>
+            <td>&amp;#47;
+            </td>
+        </tr>
+        <tr>
+            <th>\
+            </th>
+            <td>
+                разность множеств
+            </td>
+            <td>
+            </td>
+            <td>&amp;#92;
+            </td>
+        </tr>
+        <tr>
+            <th>∀
+            </th>
+            <td>для всех
+            </td>
+            <td>&amp;forall;
+            </td>
+            <td>&amp;#8704;
+            </td>
+        </tr>
+        <tr>
+            <th>∂
+            </th>
+            <td>частичный дифференциал
+            </td>
+            <td>&amp;part;
+            </td>
+            <td>&amp;#8706;
+            </td>
+        </tr>
+        <tr>
+            <th>∃
+            </th>
+            <td>существует
+            </td>
+            <td>&amp;exist;
+            </td>
+            <td>&amp;#8707;
+            </td>
+        </tr>
+        <tr>
+            <th>∅
+            </th>
+            <td>
+                пустое множество
+            </td>
+            <td>&amp;empty;
+            </td>
+            <td>&amp;#8709;
+            </td>
+        </tr>
+        <tr>
+            <th>∇
+            </th>
+            <td>оператор набла = backward difference
+            </td>
+            <td>&amp;nabla;
+            </td>
+            <td>&amp;#8711;
+            </td>
+        </tr>
+        <tr>
+            <th>∈
+            </th>
+            <td>принадлежит
+            </td>
+            <td>&amp;isin;
+            </td>
+            <td>&amp;#8712;
+            </td>
+        </tr>
+        <tr>
+            <th>∉
+            </th>
+            <td>не принадлежит
+            </td>
+            <td>&amp;notin;
+            </td>
+            <td>&amp;#8713;
+            </td>
+        </tr>
+        <tr>
+            <th>∋
+            </th>
+            <td>содержит
+            </td>
+            <td>&amp;ni;
+            </td>
+            <td>&amp;#8715;
+            </td>
+        </tr>
+        <tr>
+            <th>∏
+            </th>
+            <td>знак произведения
+            </td>
+            <td>&amp;prod;
+            </td>
+            <td>&amp;#8719;
+            </td>
+        </tr>
+        <tr>
+            <th>∑
+            </th>
+            <td>знак суммы
+            </td>
+            <td>&amp;sum;
+            </td>
+            <td>&amp;#8721;
+            </td>
+        </tr>
+        <tr>
+            <th>−
+            </th>
+            <td>минус
+            </td>
+            <td>&amp;minus;
+            </td>
+            <td>&amp;#8722;
+            </td>
+        </tr>
+        <tr>
+            <th>∗
+            </th>
+            <td>оператор звёздочка
+            </td>
+            <td>&amp;lowast;
+            </td>
+            <td>&amp;#8727;
+            </td>
+        </tr>
+        <tr>
+            <th>√
+            </th>
+            <td>квадратный корень = знак радикала
+            </td>
+            <td>&amp;radic;
+            </td>
+            <td>&amp;#8730;
+            </td>
+        </tr>
+        <tr>
+            <th>∝
+            </th>
+            <td>пропорционально к
+            </td>
+            <td>&amp;prop;
+            </td>
+            <td>&amp;#8733;
+            </td>
+        </tr>
+        <tr>
+            <th>∞
+            </th>
+            <td>бесконечность
+            </td>
+            <td>&amp;infin;
+            </td>
+            <td>&amp;#8734;
+            </td>
+        </tr>
+        <tr>
+            <th>∠
+            </th>
+            <td>угол
+            </td>
+            <td>&amp;ang;
+            </td>
+            <td>&amp;#8736;
+            </td>
+        </tr>
+        <tr>
+            <th>∧
+            </th>
+            <td>логическое И = wedge
+            </td>
+            <td>&amp;and;
+            </td>
+            <td>&amp;#8743;
+            </td>
+        </tr>
+        <tr>
+            <th>∨
+            </th>
+            <td>логическое ИЛИ = vee
+            </td>
+            <td>&amp;or;
+            </td>
+            <td>&amp;#8744;
+            </td>
+        </tr>
+        <tr>
+            <th>∩
+            </th>
+            <td>пересечение = cap
+            </td>
+            <td>&amp;cap;
+            </td>
+            <td>&amp;#8745;
+            </td>
+        </tr>
+        <tr>
+            <th>∪
+            </th>
+            <td>объединение = cup
+            </td>
+            <td>&amp;cup;
+            </td>
+            <td>&amp;#8746;
+            </td>
+        </tr>
+        <tr>
+            <th>∫
+            </th>
+            <td>интеграл
+            </td>
+            <td>&amp;int;
+            </td>
+            <td>&amp;#8747;
+            </td>
+        </tr>
+        <tr>
+            <th>∴
+            </th>
+            <td>следовательно
+            </td>
+            <td>&amp;there4;
+            </td>
+            <td>&amp;#8756;
+            </td>
+        </tr>
+        <tr>
+            <th>∼
+            </th>
+            <td>оператор тильда = varies with = подобно
+            </td>
+            <td>&amp;sim;
+            </td>
+            <td>&amp;#8764;
+            </td>
+        </tr>
+        <tr>
+            <th>≅
+            </th>
+            <td>конгруэнтно
+            </td>
+            <td>&amp;cong;
+            </td>
+            <td>&amp;#8773;
+            </td>
+        </tr>
+        <tr>
+            <th>≈
+            </th>
+            <td>примерно равно
+            </td>
+            <td>&amp;asymp;
+            </td>
+            <td>&amp;#8776;
+            </td>
+        </tr>
+        <tr>
+            <th>≠
+            </th>
+            <td>не равно
+            </td>
+            <td>&amp;ne;
+            </td>
+            <td>&amp;#8800;
+            </td>
+        </tr>
+        <tr>
+            <th>≡
+            </th>
+            <td>тождественно равно
+            </td>
+            <td>&amp;equiv;
+            </td>
+            <td>&amp;#8801;
+            </td>
+        </tr>
+        <tr>
+            <th>≤
+            </th>
+            <td>меньше или равно
+            </td>
+            <td>&amp;le;
+            </td>
+            <td>&amp;#8804;
+            </td>
+        </tr>
+        <tr>
+            <th>≥
+            </th>
+            <td>больше или равно
+            </td>
+            <td>&amp;ge;
+            </td>
+            <td>&amp;#8805;
+            </td>
+        </tr>
+        <tr>
+            <th>⊂
+            </th>
+            <td>подмножество
+            </td>
+            <td>&amp;sub;
+            </td>
+            <td>&amp;#8834;
+            </td>
+        </tr>
+        <tr>
+            <th>⊃
+            </th>
+            <td>включает в себя
+            </td>
+            <td>&amp;sup;
+            </td>
+            <td>&amp;#8835;
+            </td>
+        </tr>
+        <tr>
+            <th>⊄
+            </th>
+            <td>не включает в себя
+            </td>
+            <td>&amp;nsub;
+            </td>
+            <td>&amp;#8836;
+            </td>
+        </tr>
+        <tr>
+            <th>⊆
+            </th>
+            <td>подмножество или эквивалентно
+            </td>
+            <td>&amp;sube;
+            </td>
+            <td>&amp;#8838;
+            </td>
+        </tr>
+        <tr>
+            <th>⊇
+            </th>
+            <td>включает в себя или эквивалентно
+            </td>
+            <td>&amp;supe;
+            </td>
+            <td>&amp;#8839;
+            </td>
+        </tr>
+        <tr>
+            <th>⊕
+            </th>
+            <td>плюс в круге = прямая сумма
+            </td>
+            <td>&amp;oplus;
+            </td>
+            <td>&amp;#8853;
+            </td>
+        </tr>
+        <tr>
+            <th>⊗
+            </th>
+            <td>умножение в круге = тензорное произведение
+            </td>
+            <td>&amp;otimes;
+            </td>
+            <td>&amp;#8855;
+            </td>
+        </tr>
+        <tr>
+            <th>⊥
+            </th>
+            <td>up tack = ортогонально к = перпендикулярно
+            </td>
+            <td>&amp;perp;
+            </td>
+            <td>&amp;#8869;
+            </td>
+        </tr>
+        <tr>
+            <th>⋅
+            </th>
+            <td>оператор точка
+            </td>
+            <td>&amp;sdot;
+            </td>
+            <td>&amp;#8901;
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Различные технические
+            </th>
+        </tr>
+        <tr>
+            <th>⌈
+            </th>
+            <td>левая скобка округления вверх = apl upstile
+            </td>
+            <td>&amp;lceil;
+            </td>
+            <td>&amp;#8968;
+            </td>
+        </tr>
+        <tr>
+            <th>⌉
+            </th>
+            <td>правая скобка округления вверх
+            </td>
+            <td>&amp;rceil;
+            </td>
+            <td>&amp;#8969;
+            </td>
+        </tr>
+        <tr>
+            <th>⌊
+            </th>
+            <td>левая скобка округления вниз = apl downstile
+            </td>
+            <td>&amp;lfloor;
+            </td>
+            <td>&amp;#8970;
+            </td>
+        </tr>
+        <tr>
+            <th>⌋
+            </th>
+            <td>правая скобка округления вниз
+            </td>
+            <td>&amp;rfloor;
+            </td>
+            <td>&amp;#8971;
+            </td>
+        </tr>
+        <tr>
+            <th>〈
+            </th>
+            <td>угловая скобка влево = бра
+            </td>
+            <td>&amp;lang;
+            </td>
+            <td>&amp;#9001;
+            </td>
+        </tr>
+        <tr>
+            <th>〉
+            </th>
+            <td>угловая скобка вправо = кет
+            </td>
+            <td>&amp;rang;
+            </td>
+            <td>&amp;#9002;
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Геометрические Фигуры
+            </th>
+        </tr>
+        <tr>
+            <th>◊
+            </th>
+            <td>ромб
+            </td>
+            <td>&amp;loz;
+            </td>
+            <td>&amp;#9674;
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Различные символы
+            </th>
+        </tr>
+        <tr>
+            <th>♠
+            </th>
+            <td>«пики» (картёжные)
+            </td>
+            <td>&amp;spades;
+            </td>
+            <td>&amp;#9824;
+            </td>
+        </tr>
+        <tr>
+            <th>♣
+            </th>
+            <td>«трефы»
+            </td>
+            <td>&amp;clubs;
+            </td>
+            <td>&amp;#9827;
+            </td>
+        </tr>
+        <tr>
+            <th>♥
+            </th>
+            <td>«червы»
+            </td>
+            <td>&amp;hearts;
+            </td>
+            <td>&amp;#9829;
+            </td>
+        </tr>
+        <tr>
+            <th>♦
+            </th>
+            <td>«бубны»
+            </td>
+            <td>&amp;diams;
+            </td>
+            <td>&amp;#9830;
+            </td>
         </tr>
         </tbody>
     </table>
-    <h3>Математические символы и греческие буквы</h3>
-    <table width="100%" style="font-family: Verdana,Arial,Tahoma; font-size: 13px; color: #444;">
+    <h2>Ссылки-мнемоники для символов разметки и интернационализации</h2>
+    <table class="standard" cellpadding="5" cellspacing="0">
         <tbody>
-        <tr style="text-align: center;">
-            <th><strong>Описание символа</strong></th>
-            <th><strong>Обозначение</strong></th>
-            <th><strong>Вид</strong></th>
-        </tr>
-        <tr>
-            <td>курсивное f</td>
-            <td>&amp;fnof;</td>
-            <td align="center">ƒ</td>
-        </tr>
-        <tr>
-            <td>прописная альфа</td>
-            <td>&amp;Alpha;</td>
-            <td align="center">Α</td>
-        </tr>
-        <tr>
-            <td>прописная бета</td>
-            <td>&amp;Beta;</td>
-            <td align="center">Β</td>
-        </tr>
-        <tr>
-            <td>прописная гамма</td>
-            <td>&amp;Gamma;</td>
-            <td align="center">Γ</td>
-        </tr>
-        <tr>
-            <td>прописная дельта</td>
-            <td>&amp;Delta;</td>
-            <td align="center">Δ</td>
-        </tr>
-        <tr>
-            <td>прописной эпсилон</td>
-            <td>&amp;Epsilon;</td>
-            <td align="center">Ε</td>
-        </tr>
-        <tr>
-            <td>прописная дзета</td>
-            <td>&amp;Zeta;</td>
-            <td align="center">Ζ</td>
-        </tr>
-        <tr>
-            <td>прописная эта</td>
-            <td>&amp;Eta;</td>
-            <td align="center">Η</td>
-        </tr>
-        <tr>
-            <td>прописная тета</td>
-            <td>&amp;Theta;</td>
-            <td align="center">Θ</td>
-        </tr>
-        <tr>
-            <td>прописная иота</td>
-            <td>&amp;Iota;</td>
-            <td align="center">Ι</td>
-        </tr>
-        <tr>
-            <td>прописная каппа</td>
-            <td>&amp;Kappa;</td>
-            <td align="center">Κ</td>
-        </tr>
-        <tr>
-            <td>прописная ламбда</td>
-            <td>&amp;Lambda;</td>
-            <td align="center">Λ</td>
-        </tr>
-        <tr>
-            <td>прописная мю</td>
-            <td>&amp;Mu;</td>
-            <td align="center">Μ</td>
-        </tr>
-        <tr>
-            <td>прописная ню</td>
-            <td>&amp;Nu;</td>
-            <td align="center">Ν</td>
-        </tr>
-        <tr>
-            <td>прописная кси</td>
-            <td>&amp;Xi;</td>
-            <td align="center">Ξ</td>
-        </tr>
-        <tr>
-            <td>прописной омикрон</td>
-            <td>&amp;Omicron;</td>
-            <td align="center">Ο</td>
-        </tr>
-        <tr>
-            <td>прописная пи</td>
-            <td>&amp;Pi;</td>
-            <td align="center">Π</td>
-        </tr>
-        <tr>
-            <td>прописная ро</td>
-            <td>&amp;Rho;</td>
-            <td align="center">Ρ</td>
-        </tr>
-        <tr>
-            <td>прописная сигма</td>
-            <td>&amp;Sigma;</td>
-            <td align="center">Σ</td>
-        </tr>
-        <tr>
-            <td>прописная тау</td>
-            <td>&amp;Tau;</td>
-            <td align="center">Τ</td>
-        </tr>
-        <tr>
-            <td>прописная ипсилон</td>
-            <td>&amp;Upsilon;</td>
-            <td align="center">Υ</td>
-        </tr>
-        <tr>
-            <td>прописная фи</td>
-            <td>&amp;Phi;</td>
-            <td align="center">Φ</td>
-        </tr>
-        <tr>
-            <td>прописная хи</td>
-            <td>&amp;Chi;</td>
-            <td align="center">Χ</td>
-        </tr>
-        <tr>
-            <td>прописная пси</td>
-            <td>&amp;Psi;</td>
-            <td align="center">Ψ</td>
-        </tr>
-        <tr>
-            <td>прописная омега</td>
-            <td>&amp;Omega;</td>
-            <td align="center">Ω</td>
-        </tr>
-        <tr>
-            <td>строчная альфа</td>
-            <td>&amp;alpha;</td>
-            <td align="center">α</td>
-        </tr>
-        <tr>
-            <td>строчная бета</td>
-            <td>&amp;beta;</td>
-            <td align="center">β</td>
-        </tr>
-        <tr>
-            <td>строчная гамма</td>
-            <td>&amp;gamma;</td>
-            <td align="center">γ</td>
-        </tr>
-        <tr>
-            <td>строчная дельта</td>
-            <td>&amp;delta;</td>
-            <td align="center">δ</td>
-        </tr>
-        <tr>
-            <td>строчная эпсилон</td>
-            <td>&amp;epsilon;</td>
-            <td align="center">ε</td>
-        </tr>
-        <tr>
-            <td>строчная дзета</td>
-            <td>&amp;zeta;</td>
-            <td align="center">ζ</td>
-        </tr>
-        <tr>
-            <td>строчная эта</td>
-            <td>&amp;eta;</td>
-            <td align="center">η</td>
-        </tr>
-        <tr>
-            <td>строчная тета</td>
-            <td>&amp;theta;</td>
-            <td align="center">θ</td>
-        </tr>
-        <tr>
-            <td>строчная иота</td>
-            <td>&amp;iota;</td>
-            <td align="center">ι</td>
-        </tr>
-        <tr>
-            <td>строчная каппа</td>
-            <td>&amp;kappa;</td>
-            <td align="center">κ</td>
-        </tr>
-        <tr>
-            <td>строчная ламбда</td>
-            <td>&amp;lambda;</td>
-            <td align="center">λ</td>
-        </tr>
-        <tr>
-            <td>строчная мю</td>
-            <td>&amp;mu;</td>
-            <td align="center">μ</td>
-        </tr>
-        <tr>
-            <td>строчная ню</td>
-            <td>&amp;nu;</td>
-            <td align="center">ν</td>
-        </tr>
-        <tr>
-            <td>строчная кси</td>
-            <td>&amp;xi;</td>
-            <td align="center">ξ</td>
-        </tr>
-        <tr>
-            <td>строчный омикрон</td>
-            <td>&amp;omicron;</td>
-            <td align="center">ο</td>
-        </tr>
-        <tr>
-            <td>строчная пи</td>
-            <td>&amp;pi;</td>
-            <td align="center">π</td>
-        </tr>
-        <tr>
-            <td>строчная ро</td>
-            <td>&amp;rho;</td>
-            <td align="center">ρ</td>
-        </tr>
-        <tr>
-            <td>строчная сигма конечная</td>
-            <td>&amp;sigmaf;</td>
-            <td align="center">ς</td>
-        </tr>
-        <tr>
-            <td>строчная сигма</td>
-            <td>&amp;sigma;</td>
-            <td align="center">σ</td>
-        </tr>
-        <tr>
-            <td>строчная тау</td>
-            <td>&amp;tau;</td>
-            <td align="center">τ</td>
-        </tr>
-        <tr>
-            <td>строчная ипсилон</td>
-            <td>&amp;upsilon;</td>
-            <td align="center">υ</td>
-        </tr>
-        <tr>
-            <td>строчная фи</td>
-            <td>&amp;phi;</td>
-            <td align="center">φ</td>
-        </tr>
-        <tr>
-            <td>строчная хи</td>
-            <td>&amp;chi;</td>
-            <td align="center">χ</td>
-        </tr>
-        <tr>
-            <td>строчная пси</td>
-            <td>&amp;psi;</td>
-            <td align="center">ψ</td>
-        </tr>
-        <tr>
-            <td>строчная омега</td>
-            <td>&amp;omega;</td>
-            <td align="center">ω</td>
-        </tr>
-        <tr>
-            <td>символ строчная тета</td>
-            <td>&amp;thetasym;</td>
-            <td align="center">ϑ</td>
-        </tr>
-        <tr>
-            <td>ипсилон с крючком</td>
-            <td>&amp;upsih;</td>
-            <td align="center">ϒ</td>
-        </tr>
-        <tr>
-            <td>символ пи</td>
-            <td>&amp;piv;</td>
-            <td align="center">ϖ</td>
-        </tr>
-        <tr>
-            <td>маркер списка</td>
-            <td>&amp;bull;</td>
-            <td align="center">•</td>
-        </tr>
-        <tr>
-            <td>многоточие</td>
-            <td>&amp;hellip;</td>
-            <td align="center">…</td>
-        </tr>
-        <tr>
-            <td>знак прим</td>
-            <td>&amp;prime;</td>
-            <td align="center">′</td>
-        </tr>
-        <tr>
-            <td>знак двойной прим</td>
-            <td>&amp;Prime;</td>
-            <td align="center">″</td>
-        </tr>
-        <tr>
-            <td>надчеркивание</td>
-            <td>&amp;oline;</td>
-            <td align="center">‾</td>
-        </tr>
-        <tr>
-            <td>дробная черта</td>
-            <td>&amp;frasl;</td>
-            <td align="center">⁄</td>
-        </tr>
-        <tr>
-            <td>рукописная P</td>
-            <td>&amp;weierp;</td>
-            <td align="center">℘</td>
-        </tr>
-        <tr>
-            <td>мнимая часть числа</td>
-            <td>&amp;image;</td>
-            <td align="center">ℑ</td>
-        </tr>
-        <tr>
-            <td>действительная часть числа</td>
-            <td>&amp;real;</td>
-            <td align="center">ℜ</td>
-        </tr>
-        <tr>
-            <td>торговая марка</td>
-            <td>&amp;trade;</td>
-            <td align="center">™</td>
-        </tr>
-        <tr>
-            <td>алеф</td>
-            <td>&amp;alefsym;</td>
-            <td align="center">ℵ</td>
-        </tr>
-        <tr>
-            <td>стрелка влево</td>
-            <td>&amp;larr;</td>
-            <td align="center">←</td>
-        </tr>
-        <tr>
-            <td>стрелка вверх</td>
-            <td>&amp;uarr;</td>
-            <td align="center">↑</td>
-        </tr>
-        <tr>
-            <td>стрелка вправо</td>
-            <td>&amp;rarr;</td>
-            <td align="center">→</td>
-        </tr>
-        <tr>
-            <td>стрелка вниз</td>
-            <td>&amp;darr;</td>
-            <td align="center">↓</td>
-        </tr>
-        <tr>
-            <td>стрелка влево-вправо</td>
-            <td>&amp;harr;</td>
-            <td align="center">↔</td>
-        </tr>
-        <tr>
-            <td>возврат каретки</td>
-            <td>&amp;crarr;</td>
-            <td align="center">↵</td>
-        </tr>
-        <tr>
-            <td>двойная стрелка влево</td>
-            <td>&amp;lArr;</td>
-            <td align="center">⇐</td>
-        </tr>
-        <tr>
-            <td>двойная стрелка вверх</td>
-            <td>&amp;uArr;</td>
-            <td align="center">⇑</td>
-        </tr>
-        <tr>
-            <td>двойная стрелка вправо</td>
-            <td>&amp;rArr;</td>
-            <td align="center">⇒</td>
-        </tr>
-        <tr>
-            <td>двойная стрелка вниз</td>
-            <td>&amp;dArr;</td>
-            <td align="center">⇓</td>
-        </tr>
-        <tr>
-            <td>двойная стрелка влево-вправо</td>
-            <td>&amp;hArr;</td>
-            <td align="center">⇔</td>
-        </tr>
-        <tr>
-            <td>квантор всеобщности</td>
-            <td>&amp;forall;</td>
-            <td align="center">∀</td>
-        </tr>
-        <tr>
-            <td>знак дифференциала</td>
-            <td>&amp;part;</td>
-            <td align="center">∂</td>
-        </tr>
-        <tr>
-            <td>квантор существования</td>
-            <td>&amp;exist;</td>
-            <td align="center">∃</td>
-        </tr>
-        <tr>
-            <td>пустое множество</td>
-            <td>&amp;empty;</td>
-            <td align="center">∅</td>
-        </tr>
-        <tr>
-            <td>набла</td>
-            <td>&amp;nabla;</td>
-            <td align="center">∇</td>
-        </tr>
-        <tr>
-            <td>принадлежит множеству</td>
-            <td>&amp;isin;</td>
-            <td align="center">∈</td>
-        </tr>
-        <tr>
-            <td>не принадлежит множеству</td>
-            <td>&amp;notin;</td>
-            <td align="center">∉</td>
-        </tr>
-        <tr>
-            <td>является членом</td>
-            <td>&amp;ni;</td>
-            <td align="center">∋</td>
-        </tr>
-        <tr>
-            <td>n-арное произведение</td>
-            <td>&amp;prod;</td>
-            <td align="center">∏</td>
-        </tr>
-        <tr>
-            <td>n-арная сумма</td>
-            <td>&amp;sum;</td>
-            <td align="center">∑</td>
-        </tr>
-        <tr>
-            <td>знак минус</td>
-            <td>&amp;minus;</td>
-            <td align="center">−</td>
-        </tr>
-        <tr>
-            <td>оператор звездочка</td>
-            <td>&amp;lowast;</td>
-            <td align="center">∗</td>
-        </tr>
-        <tr>
-            <td>радикал</td>
-            <td>&amp;radic;</td>
-            <td align="center">√</td>
-        </tr>
-        <tr>
-            <td>пропорционально</td>
-            <td>&amp;prop;</td>
-            <td align="center">∝</td>
-        </tr>
-        <tr>
-            <td>бесконечность</td>
-            <td>&amp;infin;</td>
-            <td align="center">∞</td>
-        </tr>
-        <tr>
-            <td>угол</td>
-            <td>&amp;ang;</td>
-            <td align="center">∠</td>
-        </tr>
-        <tr>
-            <td>логическое И</td>
-            <td>&amp;and;</td>
-            <td align="center">∧</td>
-        </tr>
-        <tr>
-            <td>логическое ИЛИ</td>
-            <td>&amp;or;</td>
-            <td align="center">∨</td>
-        </tr>
-        <tr>
-            <td>пересечение</td>
-            <td>&amp;cap;</td>
-            <td align="center">∩</td>
-        </tr>
-        <tr>
-            <td>объединение</td>
-            <td>&amp;cup;</td>
-            <td align="center">∪</td>
-        </tr>
-        <tr>
-            <td>интеграл</td>
-            <td>&amp;int;</td>
-            <td align="center">∫</td>
-        </tr>
-        <tr>
-            <td>следовательно</td>
-            <td>&amp;there4;</td>
-            <td align="center">∴</td>
-        </tr>
-        <tr>
-            <td>оператор тильда</td>
-            <td>&amp;sim;</td>
-            <td align="center">∼</td>
-        </tr>
-        <tr>
-            <td>приблизительно равно</td>
-            <td>&amp;cong;</td>
-            <td align="center">≅</td>
-        </tr>
-        <tr>
-            <td>асимптотически равно</td>
-            <td>&amp;asymp;</td>
-            <td align="center">≈</td>
-        </tr>
-        <tr>
-            <td>не равно</td>
-            <td>&amp;ne;</td>
-            <td align="center">≠</td>
-        </tr>
-        <tr>
-            <td>тождественно равно</td>
-            <td>&amp;equiv;</td>
-            <td align="center">≡</td>
-        </tr>
-        <tr>
-            <td>меньше или равно</td>
-            <td>&amp;le;</td>
-            <td align="center">≤</td>
-        </tr>
-        <tr>
-            <td>больше или равно</td>
-            <td>&amp;ge;</td>
-            <td align="center">≥</td>
-        </tr>
-        <tr>
-            <td>подмножество</td>
-            <td>&amp;sub;</td>
-            <td align="center">⊂</td>
-        </tr>
-        <tr>
-            <td>надмножество</td>
-            <td>&amp;sup;</td>
-            <td align="center">⊃</td>
-        </tr>
-        <tr>
-            <td>не подмножество</td>
-            <td>&amp;nsub;</td>
-            <td align="center">⊄</td>
-        </tr>
-        <tr>
-            <td>подмножество или равно</td>
-            <td>&amp;sube;</td>
-            <td align="center">⊆</td>
-        </tr>
-        <tr>
-            <td>надмножество или равно</td>
-            <td>&amp;supe;</td>
-            <td align="center">⊇</td>
-        </tr>
-        <tr>
-            <td>прямая сумма</td>
-            <td>&amp;oplus;</td>
-            <td align="center">⊕</td>
-        </tr>
-        <tr>
-            <td>векторное произведение</td>
-            <td>&amp;otimes;</td>
-            <td align="center">⊗</td>
-        </tr>
-        <tr>
-            <td>перпендикулярно</td>
-            <td>&amp;perp;</td>
-            <td align="center">⊥</td>
-        </tr>
-        <tr>
-            <td>оператор точка</td>
-            <td>&amp;sdot;</td>
-            <td align="center">⋅</td>
-        </tr>
-        <tr>
-            <td>левый верхний угол</td>
-            <td>&amp;lceil;</td>
-            <td align="center">⌈</td>
-        </tr>
-        <tr>
-            <td>правый верхний угол</td>
-            <td>&amp;rceil;</td>
-            <td align="center">⌉</td>
-        </tr>
-        <tr>
-            <td>левый нижний угол</td>
-            <td>&amp;lfloor;</td>
-            <td align="center">⌊</td>
-        </tr>
-        <tr>
-            <td>правый нижний угол</td>
-            <td>&amp;rfloor;</td>
-            <td align="center">⌋</td>
-        </tr>
-        <tr>
-            <td>левая угловая скобка</td>
-            <td>&amp;lang;</td>
-            <td align="center">〈</td>
-        </tr>
-        <tr>
-            <td>правая угловая скобка</td>
-            <td>&amp;rang;</td>
-            <td align="center">〉</td>
-        </tr>
-        <tr>
-            <td>ромб</td>
-            <td>&amp;loz;</td>
-            <td align="center">◊</td>
-        </tr>
-        <tr>
-            <td>пики</td>
-            <td>&amp;spades;</td>
-            <td align="center">♠</td>
-        </tr>
-        <tr>
-            <td>трефы</td>
-            <td>&amp;clubs;</td>
-            <td align="center">♣</td>
-        </tr>
-        <tr>
-            <td>червы</td>
-            <td>&amp;hearts;</td>
-            <td align="center">♥</td>
-        </tr>
         <tr>
-            <td>бубны</td>
-            <td>&amp;diams;</td>
-            <td align="center">♦</td>
+            <th>Символ
+            </th>
+            <th align="left">Назначение
+            </th>
+            <th>Мнемоника
+            </th>
+            <th>Код
+            </th>
+        </tr>
+        <tr>
+            <th colspan="4">C0 Controls and Basic Latin
+            </th>
+        </tr>
+        <tr>
+            <th>'
+            </th>
+            <td>одинарная кавычка
+            </td>
+            <td>&amp;apos;
+            </td>
+            <td>&amp;#39;
+            </td>
+        </tr>
+        <tr>
+            <th>"
+            </th>
+            <td>двойная кавычка
+            </td>
+            <td>&amp;quot;
+            </td>
+            <td>&amp;#34;
+            </td>
+        </tr>
+        <tr>
+            <th>&amp;
+            </th>
+            <td>амперсанд
+            </td>
+            <td>&amp;amp;
+            </td>
+            <td>&amp;#38;
+            </td>
+        </tr>
+        <tr>
+            <th>&lt;
+            </th>
+            <td>меньше
+            </td>
+            <td>&amp;lt;
+            </td>
+            <td>&amp;#60;
+            </td>
+        </tr>
+        <tr>
+            <th>&gt;
+            </th>
+            <td>больше
+            </td>
+            <td>&amp;gt;
+            </td>
+            <td>&amp;#62;
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Расширенная латиница — A
+            </th>
+        </tr>
+        <tr>
+            <th>Œ
+            </th>
+            <td>латинская заглавная лигатура «OE»
+            </td>
+            <td>&amp;OElig;
+            </td>
+            <td>&amp;#338;
+            </td>
+        </tr>
+        <tr>
+            <th>œ
+            </th>
+            <td>латинская лигатура «oe»
+            </td>
+            <td>&amp;oelig;
+            </td>
+            <td>&amp;#339;
+            </td>
+        </tr>
+        <tr>
+            <th>Š
+            </th>
+            <td>латинская заглавная S с птичкой
+            </td>
+            <td>&amp;Scaron;
+            </td>
+            <td>&amp;#352;
+            </td>
+        </tr>
+        <tr>
+            <th>š
+            </th>
+            <td>латинская s с птичкой
+            </td>
+            <td>&amp;scaron;
+            </td>
+            <td>&amp;#353;
+            </td>
+        </tr>
+        <tr>
+            <th>Ÿ
+            </th>
+            <td>латинская заглавная Y с двоеточием
+            </td>
+            <td>&amp;Yuml;
+            </td>
+            <td>&amp;#376;
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Модификаторы букв
+            </th>
+        </tr>
+        <tr>
+            <th>ˆ
+            </th>
+            <td>акцент перевёрнутая птичка/circumflex accent
+            </td>
+            <td>&amp;circ;
+            </td>
+            <td>&amp;#710;
+            </td>
+        </tr>
+        <tr>
+            <th>˜
+            </th>
+            <td>малая тильда
+            </td>
+            <td>&amp;tilde;
+            </td>
+            <td>&amp;#732;
+            </td>
+        </tr>
+        <tr>
+            <th colspan="4">Общая пунктуация
+            </th>
+        </tr>
+        <tr>
+            <th>&ensp;
+            </th>
+            <td>пробел длины <i>N</i>
+            </td>
+            <td>&amp;ensp;
+            </td>
+            <td>&amp;#8194;
+            </td>
+        </tr>
+        <tr>
+            <th>&emsp;
+            </th>
+            <td>пробел длины <i>M</i>
+            </td>
+            <td>&amp;emsp;
+            </td>
+            <td>&amp;#8195;
+            </td>
+        </tr>
+        <tr>
+            <th>&thinsp;
+            </th>
+            <td>узкий пробел
+            </td>
+            <td>&amp;thinsp;
+            </td>
+            <td>&amp;#8201;
+            </td>
+        </tr>
+        <tr>
+            <th>&zwnj;
+            </th>
+            <td>zero width non-joiner
+            </td>
+            <td>&amp;zwnj;
+            </td>
+            <td>&amp;#8204;
+            </td>
+        </tr>
+        <tr>
+            <th>&zwj;
+            </th>
+            <td>zero width joiner
+            </td>
+            <td>&amp;zwj;
+            </td>
+            <td>&amp;#8205;
+            </td>
+        </tr>
+        <tr>
+            <th>
+            </th>
+            <td>left-to-right mark
+            </td>
+            <td>&amp;lrm;
+            </td>
+            <td>&amp;#8206;
+            </td>
+        </tr>
+        <tr>
+            <th>&rlm;
+            </th>
+            <td>right-to-left mark
+            </td>
+            <td>&amp;rlm;
+            </td>
+            <td>&amp;#8207;
+            </td>
+        </tr>
+        <tr>
+            <th>‑
+            </th>
+            <td>неразрывный (неразделяемый) дефис / non-breaking hyphen
+            </td>
+            <td>&nbsp;
+            </td>
+            <td>&amp;#8209;
+            </td>
+        </tr>
+        <tr>
+            <th>–
+            </th>
+            <td>тире длины N
+            </td>
+            <td>&amp;ndash;
+            </td>
+            <td>&amp;#8211;
+            </td>
+        </tr>
+        <tr>
+            <th>—
+            </th>
+            <td>тире длины M
+            </td>
+            <td>&amp;mdash;
+            </td>
+            <td>&amp;#8212;
+            </td>
+        </tr>
+        <tr>
+            <th>‘
+            </th>
+            <td>одиночная левая кавычка
+            </td>
+            <td>&amp;lsquo;
+            </td>
+            <td>&amp;#8216;
+            </td>
+        </tr>
+        <tr>
+            <th>’
+            </th>
+            <td>одиночная правая кавычка
+            </td>
+            <td>&amp;rsquo;
+            </td>
+            <td>&amp;#8217;
+            </td>
+        </tr>
+        <tr>
+            <th>‚
+            </th>
+            <td>одиночная low-9/нижняя кавычка
+            </td>
+            <td>&amp;sbquo;
+            </td>
+            <td>&amp;#8218;
+            </td>
+        </tr>
+        <tr>
+            <th>“
+            </th>
+            <td>двойная левая кавычка
+            </td>
+            <td>&amp;ldquo;
+            </td>
+            <td>&amp;#8220;
+            </td>
+        </tr>
+        <tr>
+            <th>”
+            </th>
+            <td>двойная правая кавычка
+            </td>
+            <td>&amp;rdquo;
+            </td>
+            <td>&amp;#8221;
+            </td>
+        </tr>
+        <tr>
+            <th>„
+            </th>
+            <td>двойная low-9/нижняя кавычка
+            </td>
+            <td>&amp;bdquo;
+            </td>
+            <td>&amp;#8222;
+            </td>
+        </tr>
+        <tr>
+            <th>†
+            </th>
+            <td>крест/dagger
+            </td>
+            <td>&amp;dagger;
+            </td>
+            <td>&amp;#8224;
+            </td>
+        </tr>
+        <tr>
+            <th>‡
+            </th>
+            <td>двойной dagger
+            </td>
+            <td>&amp;Dagger;
+            </td>
+            <td>&amp;#8225;
+            </td>
+        </tr>
+        <tr>
+            <th>‰
+            </th>
+            <td>промилле
+            </td>
+            <td>&amp;permil;
+            </td>
+            <td>&amp;#8240;
+            </td>
+        </tr>
+        <tr>
+            <th>‹
+            </th>
+            <td>одиночная левая угловая скобка (предложена, но ещё не стандартизирована ISO)
+            </td>
+            <td>&amp;lsaquo;
+            </td>
+            <td>&amp;#8249;
+            </td>
+        </tr>
+        <tr>
+            <th>›
+            </th>
+            <td>одиночная правая угловая скобка (предложена, но ещё не стандартизирована ISO)
+            </td>
+            <td>&amp;rsaquo;
+            </td>
+            <td>&amp;#8250;
+            </td>
+        </tr>
+        <tr>
+            <th>€
+            </th>
+            <td>евро
+            </td>
+            <td>&amp;euro;
+            </td>
+            <td>&amp;#8364;
+            </td>
+        </tr>
+        <tr>
+            <th>₽
+            </th>
+            <td>рубль
+            </td>
+            <td>
+            </td>
+            <td>&amp;#8381;
+            </td>
+        </tr>
+        <tr>
+            <th>№
+            </th>
+            <td>Знак
+                номера
+            </td>
+            <td>
+            </td>
+            <td>&amp;#8470;
+            </td>
+        </tr>
+        <tr>
+            <th>&nbsp;́
+            </th>
+            <td>Знак ударения (ставится непосредственно после буквы, над которой должен
+                изображаться)
+            </td>
+            <td>
+            </td>
+            <td>&amp;#769;
+            </td>
         </tr>
         </tbody>
     </table>
 </div>
 
-<a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%BD%D0%B5%D0%BC%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8_%D0%B2_HTML">Мнемоники в HTML</a>
+из Википедии <a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%BD%D0%B5%D0%BC%D0%BE%D0%BD%D0%B8%D0%BA%D0%B8_%D0%B2_HTML">Мнемоники в
+    HTML</a>
