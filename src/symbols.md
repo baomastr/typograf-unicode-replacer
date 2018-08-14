@@ -1,7 +1,7 @@
 
 <div>
     <h3>Символы латиницы</h3>
-    <table border="1" width="100%" style="font-family: Verdana,Arial,Tahoma; font-size: 13px; color: #444;">
+    <table width="100%" style="font-family: Verdana,Arial,Tahoma; font-size: 13px; color: #444;">
         <tbody>
         <tr style="text-align: center;">
             <th><strong>Описание символа</strong></th>
@@ -491,7 +491,7 @@
         </tbody>
     </table>
     <h3>Специальные символы</h3>
-    <table border="1" width="100%" style="font-family: Verdana,Arial,Tahoma; font-size: 13px; color: #444;">
+    <table width="100%" style="font-family: Verdana,Arial,Tahoma; font-size: 13px; color: #444;">
         <tbody>
         <tr style="text-align: center;">
             <th><strong>Описание символа</strong></th>
@@ -661,7 +661,7 @@
         </tbody>
     </table>
     <h3>Математические символы и греческие буквы</h3>
-    <table border="1" width="100%" style="font-family: Verdana,Arial,Tahoma; font-size: 13px; color: #444;">
+    <table width="100%" style="font-family: Verdana,Arial,Tahoma; font-size: 13px; color: #444;">
         <tbody>
         <tr style="text-align: center;">
             <th><strong>Описание символа</strong></th>
