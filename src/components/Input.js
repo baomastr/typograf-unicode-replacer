@@ -27,7 +27,8 @@ export default class Input extends PureComponent {
       .replace(/&ndash;/g, `\\u2013`) // –
       .replace(/&laquo;/g, `\\u00AB`) // «
       .replace(/&raquo;/g, `\\u00BB`) // »
-      .replace(/&#8381;/g, `\\u20BD`); // ₽
+      .replace(/&#8381;/g, `\\u20BD`) // ₽
+      .replace(/&#8198;/g, `\\u2006`); // Six-Per-Em Space
     this.setState({ output: replaced });
     console.log(this.state.value);
     getTypografedText(this.state.value);
