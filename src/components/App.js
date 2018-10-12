@@ -1,11 +1,11 @@
 import React, {Fragment} from "react";
+
 import TextArea from "./OutlinedTextField";
+import Tabs from "./ScrollableTabsButtonAuto";
 
 import {getReplacedOutput} from "../utils/getReplacedOutput";
 import {patch} from "../utils/patch";
 import {typografer} from "../utils/typograf";
-
-import Tabs from "./ScrollableTabsButtonAuto";
 
 class App extends React.PureComponent {
     state = {
