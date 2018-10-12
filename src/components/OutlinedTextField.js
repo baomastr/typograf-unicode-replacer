@@ -50,7 +50,6 @@ class OutlinedTextField extends React.Component {
                 variant="outlined"
                 className={"textArea"}
                 value={value}
-                readOnly
                 rows={15}
             />
         )

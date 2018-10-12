@@ -103,8 +103,8 @@ class App extends React.PureComponent {
             <div className="App">
                 <Tabs
                     tabContentFirst={this.renderJsonTypograf(error, replaced)}
-                    tabContentSecond={this.renderHtmlTypograf(replaced)}
-                    tabContentThird={this.renderStringReplacer(result)}
+                    tabContentSecond={this.renderHtmlTypograf(result)}
+                    tabContentThird={this.renderStringReplacer(replaced)}
                 />
             </div>
         );
