@@ -85,7 +85,7 @@ class App extends React.PureComponent {
                         </div>
 
                         <div>
-                            <p>replaced text output &crarr;</p>
+                            <p>typografed text output &crarr;</p>
                             <TextArea value={result} isOutput/>
                         </div>
                     </Tab>
