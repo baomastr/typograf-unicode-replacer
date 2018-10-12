@@ -1,40 +1,45 @@
 import React from 'react';
 import pt from 'prop-types';
+import cn from 'classnames';
 
-const renderInput = (style, onChange) => {
+const renderInput = (onChange, hasError) => {
     return (
         <textarea
-            style={style}
+            className={cn({
+                ["textArea"]: true,
+                ["textArea-hasError"]: hasError,
+            })}
             onChange={onChange}
         />
     )
 };
 
-const renderOutput = (style, value) => {
+const renderOutput = (value) => {
     return (
         <textarea
-            style={style}
+            className={"textArea"}
             value={value}
+            readOnly
         />
     )
 };
 
-const TextArea = ({style, onChange, value, isOutput}) => {
-    return isOutput ? renderOutput(style, value) : renderInput(style, onChange);
+const TextArea = ({onChange, value, isOutput, hasError}) => {
+    return isOutput ? renderOutput(value) : renderInput(onChange, hasError);
 };
 
 TextArea.propTypes = {
-    style: pt.object,
     onChange: pt.func,
     value: pt.string,
     isOutput: pt.bool,
+    hasError: pt.bool,
 };
 
 TextArea.defaultProps = {
-    style: {},
     onChange: () => {},
     value: '',
     isOutput: false,
+    hasError: false,
 };
 
 export default TextArea;
