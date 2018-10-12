@@ -1,11 +1,11 @@
-import React from "react";
-import TextArea from "./TextArea";
+import React, {Fragment} from "react";
+import TextArea from "./OutlinedTextField";
 
 import {getReplacedOutput} from "../utils/getReplacedOutput";
 import {patch} from "../utils/patch";
 import {typografer} from "../utils/typograf";
-import Tabs from "./Tabs";
-import Tab from "./Tab";
+
+import Tabs from "./ScrollableTabsButtonAuto";
 
 class App extends React.PureComponent {
     state = {
@@ -47,49 +47,65 @@ class App extends React.PureComponent {
         });
     };
 
+    renderJsonTypograf = (error, replaced) => {
+        return (
+            <Fragment>
+                <div>
+                    <p>&darr; put json into input below &darr;</p>
+                    <TextArea onChange={this.handleInputJSONTypografChange} hasError={!!error}/>
+                </div>
+                {error && <p>&otimes; invalid json &otimes;</p>}
+                <div>
+                    <p>json output &crarr;</p>
+                    <TextArea value={replaced} isOutput/>
+                </div>
+            </Fragment>
+        )
+    };
+
+    renderStringReplacer = replaced => {
+        return (
+            <Fragment>
+                <div>
+                    <p>&darr; put text into input below &darr;</p>
+                    <TextArea onChange={this.handleInputReplacerChange}/>
+                </div>
+
+                <div>
+                    <p>replaced text output &crarr;</p>
+                    <TextArea value={replaced} isOutput/>
+                </div>
+            </Fragment>
+        )
+    };
+
+    renderHtmlTypograf = (result) => {
+        return (
+            <Fragment>
+                <div>
+                    <p>&darr; put text into input below &darr;</p>
+                    <TextArea onChange={this.handleInputHTMLTypografChange}/>
+                </div>
+
+                <div>
+                    <p>typografed text output &crarr;</p>
+                    <TextArea value={result} isOutput/>
+                </div>
+            </Fragment>
+        )
+    };
+
     render() {
         const {result, error} = this.state;
         const replaced = getReplacedOutput(result);
 
         return (
             <div className="App">
-                <Tabs>
-                    <Tab tabName={'json typograf'}>
-                        <div>
-                            <p>&darr; put json into input below &darr;</p>
-                            <TextArea onChange={this.handleInputJSONTypografChange} hasError={!!error}/>
-                        </div>
-                        {error && <p>&otimes; invalid json &otimes;</p>}
-                        <div>
-                            <p>json output &crarr;</p>
-                            <TextArea value={replaced} isOutput/>
-                        </div>
-                    </Tab>
-
-                    <Tab tabName={'string replacer'}>
-                        <div>
-                            <p>&darr; put text into input below &darr;</p>
-                            <TextArea onChange={this.handleInputReplacerChange}/>
-                        </div>
-
-                        <div>
-                            <p>replaced text output &crarr;</p>
-                            <TextArea value={replaced} isOutput/>
-                        </div>
-                    </Tab>
-
-                    <Tab tabName={'html typograf'}>
-                        <div>
-                            <p>&darr; put text into input below &darr;</p>
-                            <TextArea onChange={this.handleInputHTMLTypografChange}/>
-                        </div>
-
-                        <div>
-                            <p>typografed text output &crarr;</p>
-                            <TextArea value={result} isOutput/>
-                        </div>
-                    </Tab>
-                </Tabs>
+                <Tabs
+                    tabContentFirst={this.renderJsonTypograf(error, replaced)}
+                    tabContentSecond={this.renderHtmlTypograf(replaced)}
+                    tabContentThird={this.renderStringReplacer(result)}
+                />
             </div>
         );
     }

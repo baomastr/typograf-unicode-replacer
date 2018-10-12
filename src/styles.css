@@ -1,31 +1,15 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
 .App {
   font-family: sans-serif;
   text-align: center;
 }
 
-.tab__wrapper {
-
-}
-
-.tabLink {
-  padding: 10px 30px;
-  border: 2px solid black;
-  background-color: white;
-  font-size: 20px;
-}
-
-.tabLink + .tabLink {
-  margin-left: 20px;
-}
-
-.tabLink-isActive {
-  text-decoration: underline;
-  background-color: #dadada;
-}
-
 .textArea {
   width: calc(100vw - 10%);
-  height: 40vh;
 }
 
 .textArea-hasError {

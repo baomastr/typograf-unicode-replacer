@@ -6,6 +6,7 @@
   "main": "src/index.js",
   "homepage": "http://baomastr.github.io/typograf-unicode-replacer",
   "dependencies": {
+    "@material-ui/core": "^3.2.0",
     "classnames": "^2.2.6",
     "react": "16.3.2",
     "react-dom": "16.3.2",
