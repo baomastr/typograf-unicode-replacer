@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+import TextArea from "./components/TextArea";
+
 import "./styles.css";
 
 const Typograf = require("typograf");
@@ -11,6 +13,42 @@ const typograf = new Typograf({
         onlyInvisible: true
     }
 });
+
+const patch = (root) => {
+    if (Array.isArray(root)) {
+        return root.map(el => patch(el));
+    } else if (root !== null && typeof root === "object") {
+        return Object.entries(root).reduce((acc, [k, v]) => {
+            if (typeof v === "string") {
+                acc[k] = typograf.execute(v);
+            } else {
+                acc[k] = patch(v);
+            }
+
+            return acc;
+        }, {});
+    } else if (typeof root === "string") {
+        return typograf.execute(root);
+    } else {
+        return root;
+    }
+};
+
+const getReplacedOutput = (input) => {
+    return input
+        .replace(/&nbsp;/g, `\\u00a0`) // space
+        .replace(/&mdash;/g, `\\u2014`) // —
+        .replace(/&ndash;/g, `\\u2013`) // –
+        .replace(/&laquo;/g, `\\u00AB`) // «
+        .replace(/&raquo;/g, `\\u00BB`) // »
+        .replace(/&#8381;/g, `\\u20BD`) // ₽
+        .replace(/₽/g, `\\u20BD`) // ₽
+        .replace(/&#8198;/g, `\\u2006`); // Six-Per-Em Space
+};
+
+const textAreaStyles = {
+    width: "calc(100vw - 10%)", height: "40vh"
+};
 
 class App extends React.Component {
     state = {
@@ -30,33 +68,18 @@ class App extends React.Component {
 
     render() {
         const {result, error} = this.state;
-
-        const replaced = result
-            .replace(/&nbsp;/g, `\\u00a0`) // space
-            .replace(/&mdash;/g, `\\u2014`) // —
-            .replace(/&ndash;/g, `\\u2013`) // –
-            .replace(/&laquo;/g, `\\u00AB`) // «
-            .replace(/&raquo;/g, `\\u00BB`) // »
-            .replace(/&#8381;/g, `\\u20BD`) // ₽
-            .replace(/₽/g, `\\u20BD`) // ₽
-            .replace(/&#8198;/g, `\\u2006`); // Six-Per-Em Space
+        const replaced = getReplacedOutput(result); // Six-Per-Em Space
 
         return (
             <div className="App">
                 <div>
-                    <p>put json into input below</p>
-                  <textarea
-                      style={{width: "calc(100vw - 10%)", height: "40vh"}}
-                      onChange={this.onInputChange}
-                  />
+                    <p>&darr; put json into input below &darr;</p>
+                    <TextArea style={textAreaStyles} onChange={this.onInputChange}/>
                 </div>
-                {error && <p>Ошибка, скорее всего невалидный json</p>}
+                {error && <p>&otimes; invalid json &otimes;</p>}
                 <div>
-                    <p>json output</p>
-                  <textarea
-                      style={{width: "calc(100vw - 10%)", height: "40vh"}}
-                      value={replaced}
-                  />
+                    <p>json output &crarr;</p>
+                    <TextArea style={textAreaStyles} value={replaced} isOutput/>
                 </div>
             </div>
         );
@@ -66,22 +89,3 @@ class App extends React.Component {
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App/>, rootElement);
 
-function patch(root) {
-    if (Array.isArray(root)) {
-        return root.map(el => patch(el));
-    } else if (root !== null && typeof root === "object") {
-        return Object.entries(root).reduce((acc, [k, v]) => {
-            if (typeof v === "string") {
-                acc[k] = typograf.execute(v);
-            } else {
-                acc[k] = patch(v);
-            }
-
-            return acc;
-        }, {});
-    } else if (typeof root === "string") {
-        return typograf.execute(root);
-    } else {
-        return root;
-    }
-}
