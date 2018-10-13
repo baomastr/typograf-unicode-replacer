@@ -35,15 +35,13 @@ class App extends React.PureComponent {
     renderJsonTypograf = (error, replaced) => {
         return (
             <Fragment>
-                <div>
-                    <p>&darr; put json into input below &darr;</p>
-                    <TextArea onChange={this.handleInputJSONTypografChange} hasError={!!error}/>
-                </div>
+                <p>&darr; put json into input below &darr;</p>
+                <TextArea onChange={this.handleInputJSONTypografChange} hasError={!!error}/>
+
                 {error && <p>&otimes; invalid json &otimes;</p>}
-                <div>
-                    <p>json output &crarr;</p>
-                    <TextArea value={replaced} isOutput/>
-                </div>
+
+                <p>json output &crarr;</p>
+                <TextArea value={replaced} isOutput/>
             </Fragment>
         )
     };
@@ -51,31 +49,23 @@ class App extends React.PureComponent {
     renderStringReplacer = replaced => {
         return (
             <Fragment>
-                <div>
-                    <p>&darr; put text into input below &darr;</p>
-                    <TextArea onChange={this.handleInputReplacerChange}/>
-                </div>
+                <p>&darr; put text into input below &darr;</p>
+                <TextArea onChange={this.handleInputReplacerChange}/>
 
-                <div>
-                    <p>replaced text output &crarr;</p>
-                    <TextArea value={replaced} isOutput/>
-                </div>
+                <p>replaced text output &crarr;</p>
+                <TextArea value={replaced} isOutput/>
             </Fragment>
         )
     };
 
-    renderHtmlTypograf = (result) => {
+    renderHtmlTypograf = result => {
         return (
             <Fragment>
-                <div>
-                    <p>&darr; put text into input below &darr;</p>
-                    <TextArea onChange={this.handleInputHTMLTypografChange}/>
-                </div>
+                <p>&darr; put text into input below &darr;</p>
+                <TextArea onChange={this.handleInputHTMLTypografChange}/>
 
-                <div>
-                    <p>typografed text output &crarr;</p>
-                    <TextArea value={result} isOutput/>
-                </div>
+                <p>typografed text output &crarr;</p>
+                <TextArea value={result} isOutput/>
             </Fragment>
         )
     };
