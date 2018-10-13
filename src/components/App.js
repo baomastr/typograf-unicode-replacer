@@ -15,9 +15,6 @@ class App extends React.PureComponent {
     };
 
     handleInputJSONTypografChange = ({target: {value}}) => {
-        if (!value) {
-            this.handleClearResult()
-        }
         try {
             const data = JSON.parse(value);
             const patched = patch(data);
@@ -28,23 +25,11 @@ class App extends React.PureComponent {
     };
 
     handleInputReplacerChange = ({target: {value}}) => {
-        if (!value) {
-            this.handleClearResult()
-        }
         this.setState({ result: getReplacedOutput(value)});
     };
 
     handleInputHTMLTypografChange = ({target: {value}}) => {
-        if (!value) {
-            this.handleClearResult()
-        }
         this.setState({ result: typografer(value)});
-    };
-
-    handleClearResult = () => {
-        this.setState({
-            result: "",
-        });
     };
 
     renderJsonTypograf = (error, replaced) => {
