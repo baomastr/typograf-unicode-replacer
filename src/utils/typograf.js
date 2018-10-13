@@ -17,6 +17,5 @@ typograf
     .enableRule('common/symbols/*');
 
 export const typografer = input => {
-    // typograf.enableRule('*');
     return typograf.execute(input);
 };

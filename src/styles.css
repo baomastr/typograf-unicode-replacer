@@ -11,7 +11,3 @@ body {
 .textArea {
   width: calc(100vw - 10%);
 }
-
-.textArea-hasError {
-  outline-color: red;
-}
