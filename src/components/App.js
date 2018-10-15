@@ -13,7 +13,6 @@ class App extends React.PureComponent {
     state = {
         result: "",
         error: null,
-        inputValue: "",
     };
 
     handleInputJSONTypografChange = ({target: {value}}) => {
