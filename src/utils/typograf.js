@@ -12,7 +12,7 @@ const typograf = new Typografer({
 
 typograf
     .enableRule('ru/money/currency')
-    .enableRule('common/html/*')
+    // .enableRule('common/html/*');
     .enableRule('common/punctuation/*')
     .enableRule('common/symbols/*');
 

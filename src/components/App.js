@@ -18,21 +18,21 @@ class App extends React.PureComponent {
         try {
             const data = JSON.parse(value);
             const patched = patch(data);
-            this.setState({error: null, result: JSON.stringify(patched, null, 2)});
+            this.setState({error: null, result: typografer(JSON.stringify(patched, null, 2))});
         } catch (err) {
             this.setState({error: err});
         }
-    };
-
-    handleInputReplacerChange = ({target: {value}}) => {
-        this.setState({ result: getReplacedOutput(value)});
     };
 
     handleInputHTMLTypografChange = ({target: {value}}) => {
         this.setState({ result: typografer(value)});
     };
 
-    renderJsonTypograf = (error, replaced) => {
+    handleInputReplacerChange = ({target: {value}}) => {
+        this.setState({ result: getReplacedOutput(value)});
+    };
+
+    renderJsonTypograf = (error, result) => {
         return (
             <Fragment>
                 <p>&darr; put json into input below &darr;</p>
@@ -41,19 +41,7 @@ class App extends React.PureComponent {
                 {error && <p>&otimes; invalid json &otimes;</p>}
 
                 <p>json output &crarr;</p>
-                <TextArea value={replaced} isOutput/>
-            </Fragment>
-        )
-    };
-
-    renderStringReplacer = replaced => {
-        return (
-            <Fragment>
-                <p>&darr; put text into input below &darr;</p>
-                <TextArea onChange={this.handleInputReplacerChange}/>
-
-                <p>replaced text output &crarr;</p>
-                <TextArea value={replaced} isOutput/>
+                <TextArea value={getReplacedOutput(result)} isOutput/>
             </Fragment>
         )
     };
@@ -70,16 +58,28 @@ class App extends React.PureComponent {
         )
     };
 
+    renderStringReplacer = result => {
+        return (
+            <Fragment>
+                <p>&darr; put text into input below &darr;</p>
+                <TextArea onChange={this.handleInputReplacerChange}/>
+
+                <p>replaced text output &crarr;</p>
+                <TextArea value={result} isOutput/>
+            </Fragment>
+        )
+    };
+
     render() {
         const {result, error} = this.state;
-        const replaced = getReplacedOutput(result);
+        // const replaced = getReplacedOutput(result);
 
         return (
             <div className="App">
                 <Tabs
-                    tabContentFirst={this.renderJsonTypograf(error, replaced)}
+                    tabContentFirst={this.renderJsonTypograf(error, result)}
                     tabContentSecond={this.renderHtmlTypograf(result)}
-                    tabContentThird={this.renderStringReplacer(replaced)}
+                    tabContentThird={this.renderStringReplacer(result)}
                 />
             </div>
         );
