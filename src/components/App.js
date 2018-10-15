@@ -7,6 +7,8 @@ import {getReplacedOutput} from "../utils/getReplacedOutput";
 import {patch} from "../utils/patch";
 import {typografer} from "../utils/typograf";
 
+import {CASES, config} from "../constants";
+
 class App extends React.PureComponent {
     state = {
         result: "",
@@ -18,7 +20,7 @@ class App extends React.PureComponent {
         try {
             const data = JSON.parse(value);
             const patched = patch(data);
-            this.setState({error: null, result: typografer(JSON.stringify(patched, null, 2))});
+            this.setState({error: null, result: getReplacedOutput(JSON.stringify(patched, null, 2))});
         } catch (err) {
             this.setState({error: err});
         }
@@ -32,54 +34,48 @@ class App extends React.PureComponent {
         this.setState({ result: getReplacedOutput(value)});
     };
 
-    renderJsonTypograf = (error, result) => {
-        return (
-            <Fragment>
-                <p>&darr; put json into input below &darr;</p>
-                <TextArea onChange={this.handleInputJSONTypografChange} hasError={!!error}/>
-
-                {error && <p>&otimes; invalid json &otimes;</p>}
-
-                <p>json output &crarr;</p>
-                <TextArea value={getReplacedOutput(result)} isOutput/>
-            </Fragment>
-        )
+    getCaseHandler = name => {
+        switch (name) {
+            case CASES.JSON: return this.handleInputJSONTypografChange;
+            case CASES.HTML: return this.handleInputHTMLTypografChange;
+            case CASES.REPLACER: return this.handleInputReplacerChange;
+        }
     };
 
-    renderHtmlTypograf = result => {
+    renderCase = item => {
+        const {result, error} = this.state;
+
         return (
             <Fragment>
-                <p>&darr; put text into input below &darr;</p>
-                <TextArea onChange={this.handleInputHTMLTypografChange}/>
-
-                <p>typografed text output &crarr;</p>
+                <p>{item.textInput}</p>
+                <TextArea onChange={this.getCaseHandler(item.name)} hasError={item.name === CASES.JSON && error}/>
+                {error && item.textError && <p>{item.textError}</p>}
+                <p>{item.textOutput}</p>
                 <TextArea value={result} isOutput/>
             </Fragment>
         )
     };
 
-    renderStringReplacer = result => {
-        return (
-            <Fragment>
-                <p>&darr; put text into input below &darr;</p>
-                <TextArea onChange={this.handleInputReplacerChange}/>
+    getTabsContent = () => {
+        const tabsContent = [];
 
-                <p>replaced text output &crarr;</p>
-                <TextArea value={result} isOutput/>
-            </Fragment>
-        )
+        for (let i=0; i < config.length; i++) {
+            tabsContent.push({
+                name: config[i].name,
+                label: config[i].label,
+                component: this.renderCase(config[i]),
+            })
+        }
+
+        return tabsContent;
     };
 
     render() {
-        const {result, error} = this.state;
-        // const replaced = getReplacedOutput(result);
 
         return (
             <div className="App">
                 <Tabs
-                    tabContentFirst={this.renderJsonTypograf(error, result)}
-                    tabContentSecond={this.renderHtmlTypograf(result)}
-                    tabContentThird={this.renderStringReplacer(result)}
+                    tabsContent={this.getTabsContent()}
                 />
             </div>
         );

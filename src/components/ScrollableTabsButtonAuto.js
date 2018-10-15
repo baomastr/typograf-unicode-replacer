@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
+import {withStyles} from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 
 function TabContainer(props) {
     return (
-        <div style={{ padding: 8 * 3 }}>
+        <div style={{padding: 8 * 3}}>
             {props.children}
         </div>
     );
@@ -31,12 +31,12 @@ class ScrollableTabsButtonAuto extends React.Component {
     };
 
     handleChange = (event, value) => {
-        this.setState({ value });
+        this.setState({value});
     };
 
     render() {
-        const { classes, tabContentFirst, tabContentSecond, tabContentThird } = this.props;
-        const { value } = this.state;
+        const {classes, tabsContent} = this.props;
+        const {value} = this.state;
 
         return (
             <div className={classes.root}>
@@ -50,14 +50,19 @@ class ScrollableTabsButtonAuto extends React.Component {
                         scrollButtons="auto"
                         centered
                     >
-                        <Tab label="Json Typograf" />
-                        <Tab label="Html Typograf" />
-                        <Tab label="String Replacer" />
+                        {tabsContent.map(
+                            (item, index) => (
+                                <Tab key={index} label={item.label}/>
+                            )
+                        )}
                     </Tabs>
                 </AppBar>
-                {value === 0 && <TabContainer>{tabContentFirst}</TabContainer>}
-                {value === 1 && <TabContainer>{tabContentSecond}</TabContainer>}
-                {value === 2 && <TabContainer>{tabContentThird}</TabContainer>}
+
+                {tabsContent.map(
+                    (item, index) => value === index && (
+                        <TabContainer key={index}>{item.component}</TabContainer>
+                    )
+                )}
             </div>
         );
     }
@@ -65,9 +70,7 @@ class ScrollableTabsButtonAuto extends React.Component {
 
 ScrollableTabsButtonAuto.propTypes = {
     classes: PropTypes.object.isRequired,
-    tabContentFirst: PropTypes.node.isRequired,
-    tabContentSecond: PropTypes.node.isRequired,
-    tabContentThird: PropTypes.node.isRequired,
+    tabsContent: PropTypes.array.isRequired,
 };
 
 export default withStyles(styles)(ScrollableTabsButtonAuto);
