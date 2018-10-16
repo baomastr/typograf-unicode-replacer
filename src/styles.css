@@ -8,6 +8,10 @@ body {
   text-align: center;
 }
 
+.flex-row {
+  display: flex;
+}
+
 .textArea {
   width: calc(100vw - 10%);
 }

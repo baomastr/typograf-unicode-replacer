@@ -16,7 +16,7 @@ export const config = [
         name: CASES.HTML,
         label: 'Html Typograf',
         textInput: '↓ put text into input below ↓',
-        textOutput: 'html output ↵',
+        textOutput: 'html/json output ↵',
     },
     {
         name: CASES.REPLACER,

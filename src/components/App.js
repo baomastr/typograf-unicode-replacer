@@ -50,7 +50,12 @@ class App extends React.PureComponent {
                 <TextArea onChange={this.getCaseHandler(item.name)} hasError={item.name === CASES.JSON && error}/>
                 {error && item.textError && <p>{item.textError}</p>}
                 <p>{item.textOutput}</p>
-                <TextArea value={result} isOutput/>
+                {item.name === CASES.HTML ?
+                    (<div className="flex-row">
+                        <TextArea value={result} isOutput/>
+                        <TextArea value={getReplacedOutput(result)} isOutput/>
+                    </div>)
+                 : <TextArea value={result} isOutput/>}
             </Fragment>
         )
     };
