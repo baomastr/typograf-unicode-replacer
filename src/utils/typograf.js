@@ -14,6 +14,7 @@ typograf
     .enableRule('ru/money/currency')
     // .enableRule('common/html/*');
     .enableRule('common/punctuation/*')
+    .enableRule('common/nbsp/afterNumber')
     .enableRule('common/symbols/*');
 
 export const typografer = input => {
