@@ -23,7 +23,7 @@ Typografer
     .addRule({
         name: 'common/nbsp/betweenWordAndNumber',
         handler: function (text) {
-            return text.replace(/([\wа-я]+) (\d+$)/ig, '$1\u00A0$2');
+            return text.replace(/([\wа-я]+) (\d+)/ig, '$1\u00A0$2');
         }
     })
 
