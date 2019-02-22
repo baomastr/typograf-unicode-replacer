@@ -1,14 +1,14 @@
-import React from "react";
-import pt from "prop-types";
-import TextField from "@material-ui/core/TextField";
+import React from 'react';
+import pt from 'prop-types';
+import TextField from '@material-ui/core/TextField';
 
 class OutlinedTextField extends React.PureComponent {
   state = {
-    inputRef: {}
+    inputRef: {},
   };
 
   componentDidMount() {
-    this.setState({ inputRef: this.props.inputRef });
+    this.setState({inputRef: this.props.inputRef});
   }
 
   renderInput = (onChange, hasError) => {
@@ -20,7 +20,7 @@ class OutlinedTextField extends React.PureComponent {
         multiline
         margin="normal"
         variant="outlined"
-        className={"textArea"}
+        className={'textArea'}
         error={hasError}
         onChange={onChange}
         rows={15}
@@ -37,7 +37,7 @@ class OutlinedTextField extends React.PureComponent {
         multiline
         margin="normal"
         variant="outlined"
-        className={"textArea"}
+        className={'textArea'}
         value={value}
         rows={15}
         inputRef={inputRef}
@@ -46,11 +46,9 @@ class OutlinedTextField extends React.PureComponent {
   };
 
   render() {
-    const { onChange, value, isOutput, hasError, inputRef } = this.props;
+    const {onChange, value, isOutput, hasError, inputRef} = this.props;
 
-    return isOutput
-      ? this.renderOutput(value, inputRef)
-      : this.renderInput(onChange, hasError);
+    return isOutput ? this.renderOutput(value, inputRef) : this.renderInput(onChange, hasError);
   }
 }
 
@@ -59,15 +57,15 @@ OutlinedTextField.propTypes = {
   value: pt.string,
   isOutput: pt.bool,
   hasError: pt.bool,
-  inputRef: pt.object
+  inputRef: pt.object,
 };
 
 OutlinedTextField.defaultProps = {
   onChange: () => {},
-  value: "",
+  value: '',
   isOutput: false,
   hasError: false,
-  inputRef: {}
+  inputRef: {},
 };
 
 export default OutlinedTextField;
