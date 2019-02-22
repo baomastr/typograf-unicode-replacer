@@ -1,24 +1,6 @@
-import React from 'react';
-import pt from 'prop-types';
-// import {withStyles} from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
-
-// const styles = theme => ({
-//   container: {
-//     display: 'flex',
-//     flexWrap: 'wrap',
-//   },
-//   textField: {
-//     marginLeft: theme.spacing.unit,
-//     marginRight: theme.spacing.unit,
-//   },
-//   dense: {
-//     marginTop: 16,
-//   },
-//   menu: {
-//     width: 200,
-//   },
-// });
+import React from "react";
+import pt from "prop-types";
+import TextField from "@material-ui/core/TextField";
 
 class OutlinedTextField extends React.PureComponent {
   state = {
@@ -26,7 +8,7 @@ class OutlinedTextField extends React.PureComponent {
   };
 
   componentDidMount() {
-    this.setState({inputRef: this.props.inputRef});
+    this.setState({ inputRef: this.props.inputRef });
   }
 
   renderInput = (onChange, hasError) => {
@@ -43,7 +25,7 @@ class OutlinedTextField extends React.PureComponent {
         onChange={onChange}
         rows={15}
       />
-    )
+    );
   };
 
   renderOutput = (value, inputRef) => {
@@ -60,13 +42,15 @@ class OutlinedTextField extends React.PureComponent {
         rows={15}
         inputRef={inputRef}
       />
-    )
+    );
   };
 
   render() {
-    const {onChange, value, isOutput, hasError, inputRef} = this.props;
+    const { onChange, value, isOutput, hasError, inputRef } = this.props;
 
-    return isOutput ? this.renderOutput(value, inputRef) : this.renderInput(onChange, hasError);
+    return isOutput
+      ? this.renderOutput(value, inputRef)
+      : this.renderInput(onChange, hasError);
   }
 }
 
@@ -75,16 +59,15 @@ OutlinedTextField.propTypes = {
   value: pt.string,
   isOutput: pt.bool,
   hasError: pt.bool,
-  inputRef: pt.object,
+  inputRef: pt.object
 };
 
 OutlinedTextField.defaultProps = {
-  onChange: () => {
-  },
-  value: '',
+  onChange: () => {},
+  value: "",
   isOutput: false,
   hasError: false,
-  inputRef: {},
+  inputRef: {}
 };
 
 export default OutlinedTextField;
