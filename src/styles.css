@@ -10,8 +10,23 @@ body {
 
 .flex-row {
   display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 49%;
 }
 
 .textArea {
-  width: calc(100vw - 10%);
+  width: 100%;
+}
+
+.outputWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

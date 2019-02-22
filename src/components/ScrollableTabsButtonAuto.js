@@ -46,8 +46,9 @@ class ScrollableTabsButtonAuto extends React.Component {
                         onChange={this.handleChange}
                         indicatorColor="primary"
                         textColor="primary"
-                        scrollable={false}
-                        scrollButtons="auto"
+                        // scrollable={false}
+                        // scrollButtons="auto"
+                        // variant="scrollable"
                         centered
                     >
                         {tabsContent.map(
