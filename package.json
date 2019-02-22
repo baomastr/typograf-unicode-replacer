@@ -29,7 +29,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-    "format:js": "prettier --write \"**/*.js\""
+    "format:js": "prettier --write \"src/**/*.js\""
   },
   "husky": {
     "hooks": {
