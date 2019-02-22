@@ -4,15 +4,15 @@
 
 ### examples of replacing:
 
-```&nbsp;``` to ```\u00a0```
+`&nbsp;` to `\u00a0`
 
-```&mdash;``` to ```\u2014```
+`&mdash;` to `\u2014`
 
-```&laquo;``` to ```\u00AB```
+`&laquo;` to `\u00AB`
 
-```&raquo;``` to ```\u00AA```
+`&raquo;` to `\u00AA`
 
-```&#8381;``` to ```\u20BD```
+`&#8381;` to `\u20BD`
 
 <a href="https://github.com/baomastr/typograf-unicode-replacer/blob/master/symbols.md">[all symbols]</a>
 
