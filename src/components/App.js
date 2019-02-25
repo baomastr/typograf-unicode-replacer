@@ -3,7 +3,7 @@ import React, {Fragment} from 'react';
 import Fab from '@material-ui/core/Fab';
 import CopyIcon from '@material-ui/icons/FileCopyOutlined';
 /*components*/
-import TextArea from './TextArea';
+import TextAreaField from './TextAreaField';
 import Tabs from './ScrollableTabsButtonAuto';
 /*utils*/
 import {getReplacedOutput} from '../utils/getReplacedOutput';
@@ -69,22 +69,22 @@ class App extends React.PureComponent {
     </Fab>
   );
 
-  renderOutput = ref => <TextArea inputRef={ref} value={this.state.result} isOutput />;
+  renderOutputField = ref => <TextAreaField inputRef={ref} value={this.state.result} isOutput />;
 
   renderCase = item => {
     const {error} = this.state;
-    const {name, textInput, textOutput} = item;
+    const {name, textInput, textOutput, textError} = item;
     const isJson = name === CASES.JSON;
     const isHtml = name === CASES.HTML;
 
     return (
       <Fragment>
         {/*input*/}
-        <p>{textInput}</p>
-        <TextArea onChange={this.getCaseHandler(name)} hasError={isJson && !!error} />
+        <span>{textInput}</span>
+        <TextAreaField onChange={this.getCaseHandler(name)} hasError={isJson && !!error} />
 
         {/*if error*/}
-        {error && item.textError && <p>{item.textError}</p>}
+        {error && textError && <p className="errorMessage">{textError}</p>}
 
         {/*output*/}
         <div className="outputWrapper">
@@ -94,18 +94,18 @@ class App extends React.PureComponent {
             <div className="flex-row">
               <div className="column">
                 {this.renderCopyButton(this.htmlOutput)}
-                {this.renderOutput(this.htmlOutput)}
+                {this.renderOutputField(this.htmlOutput)}
               </div>
 
               <div className="column">
                 {this.renderCopyButton(this.replacedOutput)}
-                {this.renderOutput(this.replacedOutput)}
+                {this.renderOutputField(this.replacedOutput)}
               </div>
             </div>
           ) : (
             <Fragment>
               {this.renderCopyButton(this.jsonOutput)}
-              {this.renderOutput(this.jsonOutput)}
+              {this.renderOutputField(this.jsonOutput)}
             </Fragment>
           )}
         </div>
@@ -114,17 +114,13 @@ class App extends React.PureComponent {
   };
 
   getTabsContent = () => {
-    const tabsContent = [];
-
-    for (let i = 0; i < config.length; i++) {
-      tabsContent.push({
-        name: config[i].name,
-        label: config[i].label,
-        component: this.renderCase(config[i]),
-      });
-    }
-
-    return tabsContent;
+    return config.map(item => {
+      return {
+        name: item.name,
+        label: item.label,
+        component: this.renderCase(item),
+      };
+    });
   };
 
   render() {

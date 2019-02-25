@@ -21,6 +21,10 @@ body {
   width: 49%;
 }
 
+.errorMessage {
+  color: red;
+}
+
 .textArea {
   width: 100%;
 }
