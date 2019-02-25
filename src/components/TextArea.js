@@ -2,15 +2,7 @@ import React from 'react';
 import pt from 'prop-types';
 import TextField from '@material-ui/core/TextField';
 
-class OutlinedTextField extends React.PureComponent {
-  state = {
-    inputRef: {},
-  };
-
-  componentDidMount() {
-    this.setState({inputRef: this.props.inputRef});
-  }
-
+class TextArea extends React.PureComponent {
   renderInput = (onChange, hasError) => {
     return (
       <TextField
@@ -20,7 +12,7 @@ class OutlinedTextField extends React.PureComponent {
         multiline
         margin="normal"
         variant="outlined"
-        className={'textArea'}
+        className="textArea"
         error={hasError}
         onChange={onChange}
         rows={15}
@@ -37,7 +29,7 @@ class OutlinedTextField extends React.PureComponent {
         multiline
         margin="normal"
         variant="outlined"
-        className={'textArea'}
+        className="textArea"
         value={value}
         rows={15}
         inputRef={inputRef}
@@ -52,7 +44,7 @@ class OutlinedTextField extends React.PureComponent {
   }
 }
 
-OutlinedTextField.propTypes = {
+TextArea.propTypes = {
   onChange: pt.func,
   value: pt.string,
   isOutput: pt.bool,
@@ -60,7 +52,7 @@ OutlinedTextField.propTypes = {
   inputRef: pt.object,
 };
 
-OutlinedTextField.defaultProps = {
+TextArea.defaultProps = {
   onChange: () => {},
   value: '',
   isOutput: false,
@@ -68,4 +60,4 @@ OutlinedTextField.defaultProps = {
   inputRef: {},
 };
 
-export default OutlinedTextField;
+export default TextArea;

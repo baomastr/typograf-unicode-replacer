@@ -8,20 +8,20 @@ export const config = [
   {
     name: CASES.JSON,
     label: 'Json Typograf',
-    textInput: '↓ put json into input below ↓',
+    textInput: '↓ paste json ↓',
     textError: '⊗ invalid json ⊗',
     textOutput: 'json output ↵',
   },
   {
     name: CASES.HTML,
     label: 'Html Typograf',
-    textInput: '↓ put text into input below ↓',
+    textInput: '↓ paste text ↓',
     textOutput: 'html/json output ↵',
   },
   {
     name: CASES.REPLACER,
     label: 'String Replacer',
-    textInput: '↓ put text into input below ↓',
+    textInput: '↓ paste text ↓',
     textOutput: 'replaced text output ↵',
   },
 ];

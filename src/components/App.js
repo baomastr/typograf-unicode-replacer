@@ -1,15 +1,15 @@
 import React, {Fragment} from 'react';
-
+/*material-ui*/
 import Fab from '@material-ui/core/Fab';
 import CopyIcon from '@material-ui/icons/FileCopyOutlined';
-
-import TextArea from './OutlinedTextField';
+/*components*/
+import TextArea from './TextArea';
 import Tabs from './ScrollableTabsButtonAuto';
-
+/*utils*/
 import {getReplacedOutput} from '../utils/getReplacedOutput';
 import {patch} from '../utils/patch';
 import {typografer} from '../utils/typograf';
-
+/*constants*/
 import {CASES, config} from '../constants';
 
 class App extends React.PureComponent {
@@ -48,7 +48,6 @@ class App extends React.PureComponent {
   };
 
   handleCopyOutput = ref => () => {
-    // console.log(ref.current.select());
     ref.current.select();
     document.execCommand('copy');
   };
@@ -64,8 +63,16 @@ class App extends React.PureComponent {
     }
   };
 
+  renderCopyButton = ref => (
+    <Fab onClick={this.handleCopyOutput(ref)} color="primary" aria-label="Copy" className="btnCopy">
+      <CopyIcon />
+    </Fab>
+  );
+
+  renderOutput = ref => <TextArea inputRef={ref} value={this.state.result} isOutput />;
+
   renderCase = item => {
-    const {result, error} = this.state;
+    const {error} = this.state;
     const {name, textInput, textOutput} = item;
     const isJson = name === CASES.JSON;
     const isHtml = name === CASES.HTML;
@@ -80,50 +87,25 @@ class App extends React.PureComponent {
         {error && item.textError && <p>{item.textError}</p>}
 
         {/*output*/}
-        <div className={'outputWrapper'}>
+        <div className="outputWrapper">
           <p>{textOutput}</p>
 
           {isHtml ? (
             <div className="flex-row">
               <div className="column">
-                <Fab
-                  onClick={this.handleCopyOutput(this.htmlOutput)}
-                  color="primary"
-                  aria-label="Add"
-                  className={'btnCopy'}
-                >
-                  <CopyIcon />
-                </Fab>
-                <TextArea inputRef={this.htmlOutput} value={result} isOutput />
+                {this.renderCopyButton(this.htmlOutput)}
+                {this.renderOutput(this.htmlOutput)}
               </div>
 
               <div className="column">
-                <Fab
-                  onClick={this.handleCopyOutput(this.replacedOutput)}
-                  color="primary"
-                  aria-label="Add"
-                  className={'btnCopy'}
-                >
-                  <CopyIcon />
-                </Fab>
-                <TextArea
-                  inputRef={this.replacedOutput}
-                  value={getReplacedOutput(result)}
-                  isOutput
-                />
+                {this.renderCopyButton(this.replacedOutput)}
+                {this.renderOutput(this.replacedOutput)}
               </div>
             </div>
           ) : (
             <Fragment>
-              <Fab
-                onClick={this.handleCopyOutput(this.jsonOutput)}
-                color="primary"
-                aria-label="Add"
-                className={'btnCopy'}
-              >
-                <CopyIcon />
-              </Fab>
-              <TextArea inputRef={this.jsonOutput} value={result} isOutput />
+              {this.renderCopyButton(this.jsonOutput)}
+              {this.renderOutput(this.jsonOutput)}
             </Fragment>
           )}
         </div>

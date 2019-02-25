@@ -1,4 +1,5 @@
 import {typografer} from '../typograf';
+
 const mock = {
   testString: 'в кухню',
   customRuleString: 'Tinkoff Black',
