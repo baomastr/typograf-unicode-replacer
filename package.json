@@ -34,7 +34,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged",
-      "pre-push": "react-scripts --testNamePattern=smoke"
+      "pre-push": "yarn test --no-watch"
     }
   },
   "lint-staged": {
