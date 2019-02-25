@@ -1,4 +1,5 @@
 import React, {Fragment} from 'react';
+import cn from 'classnames';
 /*material-ui*/
 import Fab from '@material-ui/core/Fab';
 import CopyIcon from '@material-ui/icons/FileCopyOutlined';
@@ -83,12 +84,15 @@ class App extends React.PureComponent {
         <span>{textInput}</span>
         <TextAreaField onChange={this.getCaseHandler(name)} hasError={isJson && !!error} />
 
-        {/*if error*/}
-        {error && textError && <p className="errorMessage">{textError}</p>}
-
         {/*output*/}
         <div className="outputWrapper">
-          <p>{textOutput}</p>
+          <p
+            className={cn({
+              ['errorMessage']: error,
+            })}
+          >
+            {error ? textError : textOutput}
+          </p>
 
           {isHtml ? (
             <div className="flex-row">

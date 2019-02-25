@@ -1,7 +1,7 @@
 export const CASES = {
-  JSON: 'json',
-  HTML: 'html',
-  REPLACER: 'replacer',
+  JSON: 'JSON',
+  HTML: 'HTML',
+  REPLACER: 'REPLACER',
 };
 
 export const config = [
