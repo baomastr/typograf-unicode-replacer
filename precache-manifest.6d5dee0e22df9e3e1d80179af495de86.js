@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/typograf-unicode-replacer/static/js/runtime~main.ef878bb9.js"
   },
   {
-    "revision": "b54051b849742904a6af",
-    "url": "/typograf-unicode-replacer/static/js/main.b54051b8.chunk.js"
+    "revision": "a34f0b14d3da0cb43fd9",
+    "url": "/typograf-unicode-replacer/static/js/main.a34f0b14.chunk.js"
   },
   {
-    "revision": "885604e3a2399cd96da4",
-    "url": "/typograf-unicode-replacer/static/js/2.885604e3.chunk.js"
+    "revision": "0636420a48b5a048b465",
+    "url": "/typograf-unicode-replacer/static/js/2.0636420a.chunk.js"
   },
   {
-    "revision": "b54051b849742904a6af",
+    "revision": "a34f0b14d3da0cb43fd9",
     "url": "/typograf-unicode-replacer/static/css/main.27ad2822.chunk.css"
   },
   {
-    "revision": "9d856204e092c774d55b06fffcdec396",
+    "revision": "8c9d33e17892de98d8503444908324de",
     "url": "/typograf-unicode-replacer/index.html"
   }
 ];
