@@ -88,10 +88,10 @@ class App extends React.PureComponent {
         <div className="outputWrapper">
           <p
             className={cn({
-              ['errorMessage']: error,
+              ['errorMessage']: error && textError,
             })}
           >
-            {error ? textError : textOutput}
+            {error && textError ? textError : textOutput}
           </p>
 
           {isHtml ? (
