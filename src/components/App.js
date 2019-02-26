@@ -5,7 +5,7 @@ import Fab from '@material-ui/core/Fab';
 import CopyIcon from '@material-ui/icons/FileCopyOutlined';
 /*components*/
 import TextAreaField from './TextAreaField';
-import Tabs from './ScrollableTabsButtonAuto';
+import TabsWrapper from './TabsWrapper';
 /*utils*/
 import {getReplacedOutput} from '../utils/getReplacedOutput';
 import {patch} from '../utils/patch';
@@ -130,7 +130,7 @@ class App extends React.PureComponent {
   render() {
     return (
       <div className="App">
-        <Tabs tabsContent={this.getTabsContent()} />
+        <TabsWrapper tabsContent={this.getTabsContent()} />
       </div>
     );
   }

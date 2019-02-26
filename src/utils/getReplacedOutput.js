@@ -8,6 +8,6 @@ export const getReplacedOutput = input => {
       .replace(/&raquo;/g, `\\u00BB`) // »
       .replace(/&#8381;/g, `\\u20BD`) // ₽
       // .replace(/₽/g, `\\u20BD`) // ₽
-      .replace(/&#8198;/g, `\\u2006`)
-  ); // Six-Per-Em Space
+      .replace(/&#8198;/g, `\\u2006`) // Six-Per-Em Space
+  );
 };

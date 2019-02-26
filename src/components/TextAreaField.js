@@ -21,7 +21,6 @@ class TextAreaField extends React.PureComponent {
   };
 
   renderOutput = (value, inputRef) => {
-    console.log(value);
     return (
       <TextField
         id="outlined-textarea"
