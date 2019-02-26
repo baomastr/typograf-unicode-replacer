@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import pt from 'prop-types';
 /*material-ui*/
 import AppBar from '@material-ui/core/AppBar';
 import Tabs from '@material-ui/core/Tabs';
@@ -19,7 +19,7 @@ class TabsWrapper extends React.PureComponent {
     const {value} = this.state;
 
     return (
-      <React.Fragment>
+      <>
         <AppBar position="sticky" color="default">
           <Tabs
             value={value}
@@ -42,13 +42,13 @@ class TabsWrapper extends React.PureComponent {
               </main>
             )
         )}
-      </React.Fragment>
+      </>
     );
   }
 }
 
 TabsWrapper.propTypes = {
-  tabsContent: PropTypes.array.isRequired,
+  tabsContent: pt.array.isRequired,
 };
 
 export default TabsWrapper;

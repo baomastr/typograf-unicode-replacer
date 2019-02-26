@@ -1,4 +1,4 @@
-import React, {Fragment} from 'react';
+import React from 'react';
 import cn from 'classnames';
 /*material-ui*/
 import Fab from '@material-ui/core/Fab';
@@ -61,6 +61,8 @@ class App extends React.PureComponent {
         return this.handleInputHTMLTypografChange;
       case CASES.REPLACER:
         return this.handleInputReplacerChange;
+      default:
+        break;
     }
   };
 
@@ -79,7 +81,7 @@ class App extends React.PureComponent {
     const isHtml = name === CASES.HTML;
 
     return (
-      <Fragment>
+      <>
         {/*input*/}
         <span>{textInput}</span>
         <TextAreaField onChange={this.getCaseHandler(name)} hasError={isJson && !!error} />
@@ -88,7 +90,7 @@ class App extends React.PureComponent {
         <div className="outputWrapper">
           <p
             className={cn({
-              ['errorMessage']: error && textError,
+              errorMessage: error && !!textError,
             })}
           >
             {error && textError ? textError : textOutput}
@@ -107,13 +109,13 @@ class App extends React.PureComponent {
               </div>
             </div>
           ) : (
-            <Fragment>
+            <>
               {this.renderCopyButton(this.jsonOutput)}
               {this.renderOutputField(this.jsonOutput)}
-            </Fragment>
+            </>
           )}
         </div>
-      </Fragment>
+      </>
     );
   };
 
