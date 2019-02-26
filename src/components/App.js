@@ -72,7 +72,13 @@ class App extends React.PureComponent {
     </Fab>
   );
 
-  renderOutputField = ref => <TextAreaField inputRef={ref} value={this.state.result} isOutput />;
+  renderOutputField = (ref, isReplacedOutput) => (
+    <TextAreaField
+      inputRef={ref}
+      value={isReplacedOutput ? getReplacedOutput(this.state.result) : this.state.result}
+      isOutput
+    />
+  );
 
   renderCase = item => {
     const {error} = this.state;
@@ -105,7 +111,7 @@ class App extends React.PureComponent {
 
               <div className="column">
                 {this.renderCopyButton(this.replacedOutput)}
-                {this.renderOutputField(this.replacedOutput)}
+                {this.renderOutputField(this.replacedOutput, true)}
               </div>
             </div>
           ) : (
