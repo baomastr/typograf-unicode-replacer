@@ -23,3 +23,8 @@ yarn-debug.log*
 yarn-error.log*
 .idea/
 .vscode/
+
+# gitlab-ci
+deploy.sh
+.gitlab-ci.yml
+Dockerfile
