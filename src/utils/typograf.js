@@ -37,6 +37,13 @@ Typografer.addRule({
   })
 
   .addRule({
+    name: 'common/nbsp/betweenNumbers',
+    handler: function(text) {
+      return text.replace(/(\d+) (\d+)/gi, '$1\u00A0$2');
+    },
+  })
+
+  .addRule({
     name: 'common/nbsp/ALLGames',
     handler: function(text) {
       return text.replace(/ALL Games/gi, 'ALL\u00A0Games');
