@@ -52,7 +52,7 @@ Typografer.addRule({
 
 const typograf = new Typografer({
   locale: ['ru', 'en-US'],
-  live: true,
+  live: false, // true затирает &nbsp;
   htmlEntity: {
     type: 'name',
     onlyInvisible: true,
