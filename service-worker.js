@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/typograf-unicode-replacer/precache-manifest.6750ae0356dd7621483888d27dcc174c.js"
+  "/typograf-unicode-replacer/precache-manifest.b21f30891400b8dc6014be59fbd17f55.js"
 );
 
 workbox.clientsClaim();
