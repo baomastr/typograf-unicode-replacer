@@ -1,5 +1,6 @@
 // https://github.com/typograf/typograf
-import Typografer from 'typograf';
+const Typografer = require('typograf');
+const upperFirst = require('lodash/upperFirst');
 
 Typografer.addRule({
   name: 'ru/nbsp/groupNumbersNew',
@@ -17,36 +18,45 @@ Typografer.addRule({
 
   .addRule({
     name: 'common/nbsp/TinkoffBank',
-    handler: function(text) {
+    handler(text) {
       return text.replace(/(Тинькофф)\s+(Банк)/gi, '$1\u00A0$2');
     },
   })
 
   .addRule({
     name: 'common/nbsp/TinkoffBlack',
-    handler: function(text) {
+    handler(text) {
       return text.replace(/(Tinkoff)\s+(Black)/gi, '$1\u00A0$2');
     },
   })
 
   .addRule({
     name: 'common/nbsp/betweenWordAndNumber',
-    handler: function(text) {
+    handler(text) {
       return text.replace(/([\wа-я]+) (\d+)/gi, '$1\u00A0$2');
     },
   })
 
   .addRule({
     name: 'common/nbsp/betweenNumbers',
-    handler: function(text) {
+    handler(text) {
       return text.replace(/(\d+) (\d+)/gi, '$1\u00A0$2');
     },
   })
 
   .addRule({
-    name: 'common/nbsp/ALLGames',
-    handler: function(text) {
-      return text.replace(/ALL Games/gi, 'ALL\u00A0Games');
+    name: 'common/nbsp/ALLCards',
+    handler(text) {
+      return text.replace(/(ALL)\s+(Games|Airlines)/gi, (...x) => {
+        return `${x[1].toUpperCase()}\u00A0${upperFirst(x[2])}`;
+      });
+    },
+  })
+
+  .addRule({
+    name: 'ru/money/currencyNew',
+    handler(text) {
+      return text.replace(/([\s]+)([$€¥Ұ£₤₽])/gm, '\u00A0$2');
     },
   });
 
@@ -60,7 +70,7 @@ const typograf = new Typografer({
 });
 
 typograf
-  .enableRule('ru/money/currency')
+  // .enableRule('ru/money/currency') // заменено на ru/money/currencyNew т.к. ломалась строка с точкой после ₽, завёл ишью https://github.com/typograf/typograf/issues/359
   .enableRule('common/punctuation/*')
   .enableRule('common/nbsp/afterNumber')
   .enableRule('common/symbols/*')
