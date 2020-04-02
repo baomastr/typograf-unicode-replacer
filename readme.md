@@ -44,7 +44,7 @@ but
 // will get
 
 {
-  "test": [
+  "_test": [
     {
       "test": "test to test"
     }
