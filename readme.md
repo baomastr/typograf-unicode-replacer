@@ -17,3 +17,37 @@
 <a href="https://github.com/baomastr/typograf-unicode-replacer/blob/master/symbols.md">[all symbols]</a>
 
 based on <a href="https://github.com/typograf/typograf">[typograf]</a>
+
+## JSON mode ignoring
+
+ignoring works recursively for keys starting with underScore.
+
+```javascript
+{"test": [{"test": "test to test"}]}
+
+// will get
+
+{
+  "test": [
+    {
+      "test": "test to\u00a0test"
+    }
+  ]
+}
+```
+
+but
+
+```javascript
+{"_test": [{"test": "test to test"}]}
+
+// will get
+
+{
+  "test": [
+    {
+      "test": "test to test"
+    }
+  ]
+}
+```
